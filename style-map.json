@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1779344441723,
+  "generatedAt": 1779377342945,
   "entries": {
     "RootLayout@app/_layout.tsx:31": {
       "element": {
@@ -1252,10 +1252,10 @@
         }
       ]
     },
-    "HomeScreen@app/index.tsx:409": {
+    "HomeScreen@app/index.tsx:408": {
       "element": {
         "file": "app/index.tsx",
-        "line": 409
+        "line": 408
       },
       "styles": [
         {
@@ -1263,19 +1263,57 @@
           "file": "app/index.tsx",
           "properties": {
             "marginTop": {
+              "line": 410,
+              "col": 25,
+              "endCol": 27,
+              "raw": "12"
+            },
+            "fontSize": {
+              "line": 411,
+              "col": 24,
+              "endCol": 26,
+              "raw": "12"
+            },
+            "color": {
               "line": 412,
+              "col": 21,
+              "endCol": 30,
+              "raw": "\"#6B7280\""
+            },
+            "textAlign": {
+              "line": 413,
+              "col": 25,
+              "endCol": 33,
+              "raw": "\"center\""
+            }
+          }
+        }
+      ]
+    },
+    "HomeScreen@app/index.tsx:422": {
+      "element": {
+        "file": "app/index.tsx",
+        "line": 422
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/index.tsx",
+          "properties": {
+            "marginTop": {
+              "line": 425,
               "col": 23,
               "endCol": 25,
               "raw": "32"
             },
             "alignItems": {
-              "line": 413,
+              "line": 426,
               "col": 24,
               "endCol": 32,
               "raw": "\"center\""
             },
             "gap": {
-              "line": 414,
+              "line": 427,
               "col": 17,
               "endCol": 19,
               "raw": "12"
@@ -1284,10 +1322,10 @@
         }
       ]
     },
-    "HomeScreen@app/index.tsx:417": {
+    "HomeScreen@app/index.tsx:430": {
       "element": {
         "file": "app/index.tsx",
-        "line": 417
+        "line": 430
       },
       "styles": [
         {
@@ -1295,19 +1333,19 @@
           "file": "app/index.tsx",
           "properties": {
             "flexDirection": {
-              "line": 418,
+              "line": 431,
               "col": 36,
               "endCol": 41,
               "raw": "\"row\""
             },
             "alignItems": {
-              "line": 418,
+              "line": 431,
               "col": 55,
               "endCol": 63,
               "raw": "\"center\""
             },
             "gap": {
-              "line": 418,
+              "line": 431,
               "col": 70,
               "endCol": 72,
               "raw": "16"
@@ -1316,10 +1354,10 @@
         }
       ]
     },
-    "HomeScreen@app/index.tsx:420": {
+    "HomeScreen@app/index.tsx:433": {
       "element": {
         "file": "app/index.tsx",
-        "line": 420
+        "line": 433
       },
       "styles": [
         {
@@ -1327,19 +1365,19 @@
           "file": "app/index.tsx",
           "properties": {
             "flexDirection": {
-              "line": 422,
+              "line": 435,
               "col": 31,
               "endCol": 36,
               "raw": "\"row\""
             },
             "alignItems": {
-              "line": 423,
+              "line": 436,
               "col": 28,
               "endCol": 36,
               "raw": "\"center\""
             },
             "gap": {
-              "line": 424,
+              "line": 437,
               "col": 21,
               "endCol": 22,
               "raw": "6"
@@ -1348,10 +1386,10 @@
         }
       ]
     },
-    "HomeScreen@app/index.tsx:428": {
+    "HomeScreen@app/index.tsx:441": {
       "element": {
         "file": "app/index.tsx",
-        "line": 428
+        "line": 441
       },
       "styles": [
         {
@@ -1359,7 +1397,7 @@
           "file": "app/index.tsx",
           "properties": {
             "fontSize": {
-              "line": 431,
+              "line": 444,
               "col": 28,
               "endCol": 30,
               "raw": "12"
@@ -1368,10 +1406,10 @@
         }
       ]
     },
-    "HomeScreen@app/index.tsx:438": {
+    "HomeScreen@app/index.tsx:451": {
       "element": {
         "file": "app/index.tsx",
-        "line": 438
+        "line": 451
       },
       "styles": [
         {
@@ -1379,19 +1417,19 @@
           "file": "app/index.tsx",
           "properties": {
             "flexDirection": {
-              "line": 440,
+              "line": 453,
               "col": 31,
               "endCol": 36,
               "raw": "\"row\""
             },
             "alignItems": {
-              "line": 441,
+              "line": 454,
               "col": 28,
               "endCol": 36,
               "raw": "\"center\""
             },
             "gap": {
-              "line": 442,
+              "line": 455,
               "col": 21,
               "endCol": 22,
               "raw": "6"
@@ -1400,10 +1438,10 @@
         }
       ]
     },
-    "HomeScreen@app/index.tsx:446": {
+    "HomeScreen@app/index.tsx:459": {
       "element": {
         "file": "app/index.tsx",
-        "line": 446
+        "line": 459
       },
       "styles": [
         {
@@ -1411,7 +1449,7 @@
           "file": "app/index.tsx",
           "properties": {
             "fontSize": {
-              "line": 449,
+              "line": 462,
               "col": 28,
               "endCol": 30,
               "raw": "12"
@@ -1420,10 +1458,10 @@
         }
       ]
     },
-    "HomeScreen@app/index.tsx:460": {
+    "HomeScreen@app/index.tsx:473": {
       "element": {
         "file": "app/index.tsx",
-        "line": 460
+        "line": 473
       },
       "styles": [
         {
@@ -1431,7 +1469,7 @@
           "file": "app/index.tsx",
           "properties": {
             "marginTop": {
-              "line": 462,
+              "line": 475,
               "col": 30,
               "endCol": 32,
               "raw": "24"

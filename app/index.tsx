@@ -403,6 +403,19 @@ export default function HomeScreen() {
               </Text>
             </Pressable>
           </Animated.View>
+
+          {/* Affiliate Disclosure */}
+          <Text
+            style={{
+              marginTop: 12,
+              fontSize: 12,
+              color: "#6B7280",
+              textAlign: "center",
+            }}
+          >
+            TripVibe is a travel comparison site. We may receive a commission if
+            you book through the links on this page.
+          </Text>
         </Animated.View>
 
         {/* Bottom decorative elements */}
