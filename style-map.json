@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1779334808385,
+  "generatedAt": 1779336192997,
   "entries": {
     "RootLayout@app/_layout.tsx:31": {
       "element": {
@@ -1420,6 +1420,338 @@
         }
       ]
     },
+    "AdCard@components/ad-card.tsx:14": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 14
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "borderRadius": {
+              "line": 18,
+              "col": 22,
+              "endCol": 24,
+              "raw": "16"
+            },
+            "padding": {
+              "line": 19,
+              "col": 17,
+              "endCol": 19,
+              "raw": "16"
+            },
+            "boxShadow": {
+              "line": 20,
+              "col": 19,
+              "endCol": 48,
+              "raw": "\"0 4px 20px rgba(0,0,0,0.08)\""
+            },
+            "borderCurve": {
+              "line": 21,
+              "col": 21,
+              "endCol": 33,
+              "raw": "\"continuous\""
+            },
+            "borderWidth": {
+              "line": 22,
+              "col": 21,
+              "endCol": 22,
+              "raw": "1"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:27": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 27
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "position": {
+              "line": 29,
+              "col": 20,
+              "endCol": 30,
+              "raw": "\"absolute\""
+            },
+            "top": {
+              "line": 30,
+              "col": 15,
+              "endCol": 17,
+              "raw": "10"
+            },
+            "right": {
+              "line": 31,
+              "col": 17,
+              "endCol": 19,
+              "raw": "10"
+            },
+            "paddingHorizontal": {
+              "line": 33,
+              "col": 29,
+              "endCol": 30,
+              "raw": "8"
+            },
+            "paddingVertical": {
+              "line": 34,
+              "col": 27,
+              "endCol": 28,
+              "raw": "3"
+            },
+            "borderRadius": {
+              "line": 35,
+              "col": 24,
+              "endCol": 25,
+              "raw": "4"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:38": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 38
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 41,
+              "col": 22,
+              "endCol": 24,
+              "raw": "10"
+            },
+            "letterSpacing": {
+              "line": 43,
+              "col": 27,
+              "endCol": 30,
+              "raw": "0.3"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:50": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 50
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "flexDirection": {
+              "line": 50,
+              "col": 36,
+              "endCol": 41,
+              "raw": "\"row\""
+            },
+            "alignItems": {
+              "line": 50,
+              "col": 55,
+              "endCol": 63,
+              "raw": "\"center\""
+            },
+            "gap": {
+              "line": 50,
+              "col": 70,
+              "endCol": 72,
+              "raw": "14"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:52": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 52
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "width": {
+              "line": 54,
+              "col": 19,
+              "endCol": 21,
+              "raw": "64"
+            },
+            "height": {
+              "line": 55,
+              "col": 20,
+              "endCol": 22,
+              "raw": "64"
+            },
+            "borderRadius": {
+              "line": 56,
+              "col": 26,
+              "endCol": 28,
+              "raw": "12"
+            },
+            "alignItems": {
+              "line": 58,
+              "col": 24,
+              "endCol": 32,
+              "raw": "\"center\""
+            },
+            "justifyContent": {
+              "line": 59,
+              "col": 28,
+              "endCol": 36,
+              "raw": "\"center\""
+            },
+            "borderCurve": {
+              "line": 60,
+              "col": 25,
+              "endCol": 37,
+              "raw": "\"continuous\""
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:63": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 63
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "width": {
+              "line": 67,
+              "col": 28,
+              "endCol": 30,
+              "raw": "40"
+            },
+            "height": {
+              "line": 67,
+              "col": 40,
+              "endCol": 42,
+              "raw": "40"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:73": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 73
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "flex": {
+              "line": 73,
+              "col": 29,
+              "endCol": 30,
+              "raw": "1"
+            },
+            "gap": {
+              "line": 73,
+              "col": 37,
+              "endCol": 38,
+              "raw": "4"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:74": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 74
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 77,
+              "col": 24,
+              "endCol": 26,
+              "raw": "14"
+            },
+            "lineHeight": {
+              "line": 79,
+              "col": 26,
+              "endCol": 28,
+              "raw": "20"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:84": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 84
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 87,
+              "col": 24,
+              "endCol": 26,
+              "raw": "12"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:96": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 96
+      },
+      "styles": [
+        {
+          "origin": "dynamic",
+          "resolvable": false
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:108": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 108
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 111,
+              "col": 24,
+              "endCol": 26,
+              "raw": "11"
+            }
+          }
+        }
+      ]
+    },
     "FlightCard@components/flight-card.tsx:20": {
       "element": {
         "file": "components/flight-card.tsx",
@@ -2051,338 +2383,6 @@
               "col": 23,
               "endCol": 32,
               "raw": "\"#FFFFFF\""
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:14": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 14
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "borderRadius": {
-              "line": 18,
-              "col": 22,
-              "endCol": 24,
-              "raw": "16"
-            },
-            "padding": {
-              "line": 19,
-              "col": 17,
-              "endCol": 19,
-              "raw": "16"
-            },
-            "boxShadow": {
-              "line": 20,
-              "col": 19,
-              "endCol": 48,
-              "raw": "\"0 4px 20px rgba(0,0,0,0.08)\""
-            },
-            "borderCurve": {
-              "line": 21,
-              "col": 21,
-              "endCol": 33,
-              "raw": "\"continuous\""
-            },
-            "borderWidth": {
-              "line": 22,
-              "col": 21,
-              "endCol": 22,
-              "raw": "1"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:27": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 27
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "position": {
-              "line": 29,
-              "col": 20,
-              "endCol": 30,
-              "raw": "\"absolute\""
-            },
-            "top": {
-              "line": 30,
-              "col": 15,
-              "endCol": 17,
-              "raw": "10"
-            },
-            "right": {
-              "line": 31,
-              "col": 17,
-              "endCol": 19,
-              "raw": "10"
-            },
-            "paddingHorizontal": {
-              "line": 33,
-              "col": 29,
-              "endCol": 30,
-              "raw": "8"
-            },
-            "paddingVertical": {
-              "line": 34,
-              "col": 27,
-              "endCol": 28,
-              "raw": "3"
-            },
-            "borderRadius": {
-              "line": 35,
-              "col": 24,
-              "endCol": 25,
-              "raw": "4"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:38": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 38
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 41,
-              "col": 22,
-              "endCol": 24,
-              "raw": "10"
-            },
-            "letterSpacing": {
-              "line": 43,
-              "col": 27,
-              "endCol": 30,
-              "raw": "0.3"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:50": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 50
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "flexDirection": {
-              "line": 50,
-              "col": 36,
-              "endCol": 41,
-              "raw": "\"row\""
-            },
-            "alignItems": {
-              "line": 50,
-              "col": 55,
-              "endCol": 63,
-              "raw": "\"center\""
-            },
-            "gap": {
-              "line": 50,
-              "col": 70,
-              "endCol": 72,
-              "raw": "14"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:52": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 52
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "width": {
-              "line": 54,
-              "col": 19,
-              "endCol": 21,
-              "raw": "64"
-            },
-            "height": {
-              "line": 55,
-              "col": 20,
-              "endCol": 22,
-              "raw": "64"
-            },
-            "borderRadius": {
-              "line": 56,
-              "col": 26,
-              "endCol": 28,
-              "raw": "12"
-            },
-            "alignItems": {
-              "line": 58,
-              "col": 24,
-              "endCol": 32,
-              "raw": "\"center\""
-            },
-            "justifyContent": {
-              "line": 59,
-              "col": 28,
-              "endCol": 36,
-              "raw": "\"center\""
-            },
-            "borderCurve": {
-              "line": 60,
-              "col": 25,
-              "endCol": 37,
-              "raw": "\"continuous\""
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:63": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 63
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "width": {
-              "line": 67,
-              "col": 28,
-              "endCol": 30,
-              "raw": "40"
-            },
-            "height": {
-              "line": 67,
-              "col": 40,
-              "endCol": 42,
-              "raw": "40"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:73": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 73
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "flex": {
-              "line": 73,
-              "col": 29,
-              "endCol": 30,
-              "raw": "1"
-            },
-            "gap": {
-              "line": 73,
-              "col": 37,
-              "endCol": 38,
-              "raw": "4"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:74": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 74
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 77,
-              "col": 24,
-              "endCol": 26,
-              "raw": "14"
-            },
-            "lineHeight": {
-              "line": 79,
-              "col": 26,
-              "endCol": 28,
-              "raw": "20"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:84": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 84
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 87,
-              "col": 24,
-              "endCol": 26,
-              "raw": "12"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:96": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 96
-      },
-      "styles": [
-        {
-          "origin": "dynamic",
-          "resolvable": false
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:108": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 108
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 111,
-              "col": 24,
-              "endCol": 26,
-              "raw": "11"
             }
           }
         }
