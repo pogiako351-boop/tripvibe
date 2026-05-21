@@ -1,24 +1,24 @@
 import {
-  Inter_400Regular,
-  Inter_500Medium,
-  Inter_600SemiBold,
-  Inter_700Bold,
-} from "@expo-google-fonts/inter";
+  PlusJakartaSans_400Regular,
+  PlusJakartaSans_500Medium,
+  PlusJakartaSans_600SemiBold,
+  PlusJakartaSans_700Bold,
+} from "@expo-google-fonts/plus-jakarta-sans";
 
 // Font map passed to useFonts() in _layout.tsx
 export const FontMap = {
-  Inter_400Regular,
-  Inter_500Medium,
-  Inter_600SemiBold,
-  Inter_700Bold,
+  PlusJakartaSans_400Regular,
+  PlusJakartaSans_500Medium,
+  PlusJakartaSans_600SemiBold,
+  PlusJakartaSans_700Bold,
 };
 
 // Semantic aliases used in styles throughout the app
 export const Fonts = {
-  regular: "Inter_400Regular",
-  medium: "Inter_500Medium",
-  semiBold: "Inter_600SemiBold",
-  bold: "Inter_700Bold",
+  regular: "PlusJakartaSans_400Regular",
+  medium: "PlusJakartaSans_500Medium",
+  semiBold: "PlusJakartaSans_600SemiBold",
+  bold: "PlusJakartaSans_700Bold",
 } as const;
 
 export type FontWeight = keyof typeof Fonts;

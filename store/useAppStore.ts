@@ -1,7 +1,7 @@
-import { create } from 'zustand';
-import { persist, createJSONStorage } from 'zustand/middleware';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { Preferences } from './types';
+import { create } from "zustand";
+import { persist, createJSONStorage } from "zustand/middleware";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import type { Preferences } from "./types";
 
 interface PreferencesSlice {
   preferences: Preferences;
@@ -15,7 +15,7 @@ export const useAppStore = create<AppStore>()(
       preferences: {},
     }),
     {
-      name: 'app-storage',
+      name: "app-storage",
       storage: createJSONStorage(() => AsyncStorage),
       partialize: (state) => ({
         preferences: state.preferences,

@@ -1,8 +1,9 @@
-/**
- * Base entity types for the app store.
- *
- * The skeleton phase will extend this file with app-specific entity
- * interfaces derived from the development plan's data model.
- */
+import { Airport } from "@/constants/Airports";
+
+export interface SearchState {
+  origin: Airport | null;
+  destination: Airport | null;
+  date: string;
+}
 
 export interface Preferences {}

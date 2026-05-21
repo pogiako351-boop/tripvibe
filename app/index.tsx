@@ -1,157 +1,460 @@
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { SvgXml } from "react-native-svg";
-import Svg, { Path } from "react-native-svg";
-import { Linking } from "react-native";
+import React, { useState, useCallback } from "react";
+import {
+  View,
+  Text,
+  Pressable,
+  ScrollView,
+  Platform,
+} from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { useRouter } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
+import Animated, {
+  FadeInDown,
+  FadeInUp,
+  useAnimatedStyle,
+  useSharedValue,
+  withSpring,
+} from "react-native-reanimated";
+import { Colors } from "@/constants/Colors";
+import { Fonts } from "@/constants/Typography";
+import { Airport } from "@/constants/Airports";
+import { AirportAutocomplete } from "@/components/airport-autocomplete";
+import { supabase } from "@/lib/supabase";
+import DateTimePicker from "@react-native-community/datetimepicker";
 
-const PANDA_SIZE = 260;
+const isWeb = Platform.OS === "web";
 
-// Body (single fill — off-white)
-const svgBody = `<svg viewBox="0 0 218.063 247.993" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.77415 98.3996C3.42561 14.8914 90.9119 -22.7771 160.066 14.2259C207.322 39.5113 264.662 233.81 155.744 243.791C54.0296 253.112 71.3686 248.635 27.8086 212.85C-7.62035 167.714 -2.42489 142.814 6.77415 98.3996Z" fill="#EFEFEF"/></svg>`;
+export default function HomeScreen() {
+  const insets = useSafeAreaInsets();
+  const router = useRouter();
 
-// Ears (fill-0 base + fill-1 black on top → renders black)
-const svgEars = `<svg viewBox="0 0 160.362 43.2627" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.927081 18.0554C8.96318 2.21733 34.4412 -3.58093 43.0737 2.17404C55.9009 10.7255 46.1393 18.4581 50.4035 25.8211L16.1859 43.2627C8.57223 34.3673 -3.43071 26.6439 0.927081 18.0554Z" fill="#D0ACDC"/>
-<path d="M0.927081 18.0554C8.96318 2.21733 34.4412 -3.58093 43.0737 2.17404C55.9009 10.7255 46.1393 18.4581 50.4035 25.8211L16.1859 43.2627C8.57223 34.3673 -3.43071 26.6439 0.927081 18.0554Z" fill="black"/>
-<path d="M159.435 18.0553C151.399 2.21729 125.921 -3.58097 117.288 2.174C104.461 10.7254 114.223 18.458 109.959 25.821L144.176 43.2626C151.79 34.3672 163.793 26.6439 159.435 18.0553Z" fill="#D0ACDC"/>
-<path d="M159.435 18.0553C151.399 2.21729 125.921 -3.58097 117.288 2.174C104.461 10.7254 114.223 18.458 109.959 25.821L144.176 43.2626C151.79 34.3672 163.793 26.6439 159.435 18.0553Z" fill="black"/>
-</svg>`;
+  const [origin, setOrigin] = useState<Airport | null>(null);
+  const [destination, setDestination] = useState<Airport | null>(null);
+  const [date, setDate] = useState(new Date());
+  const [showDatePicker, setShowDatePicker] = useState(false);
+  const [isSearching, setIsSearching] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-// Body belly mask (fill-0 base + fill-1 black → black belly shadow)
-const svgBodyMask = `<svg viewBox="0 0 218.063 247.993" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><mask id="m0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="219" height="248"><path d="M6.77415 98.3996C3.42561 14.8914 90.9119 -22.7771 160.066 14.2259C207.322 39.5113 264.662 233.81 155.744 243.791C54.0296 253.112 71.3686 248.635 27.8086 212.85C-7.62035 167.714 -2.42489 142.814 6.77415 98.3996Z" fill="#F5EEF7"/></mask></defs><g mask="url(#m0)"><path d="M7.63532 46.6916C56.1955 73.5677 135.602 65.627 181.719 36.0022C285.559 146.255 -71.4659 145.339 7.63532 46.6916Z" fill="#D9D9D9"/><path d="M7.63532 46.6916C56.1955 73.5677 135.602 65.627 181.719 36.0022C285.559 146.255 -71.4659 145.339 7.63532 46.6916Z" fill="black"/></g></svg>`;
+  const buttonScale = useSharedValue(1);
 
-// Head (single fill — off-white)
-const svgHead = `<svg viewBox="0 0 181.655 123.386" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.4599 43.6158C22.8735 1.13287 71.1283 2.77147e-05 94.0341 0V119.235C88.8421 123.767 66.5346 123.598 59.2173 123.2C-3.39175 119.802 -14.0811 70.2384 16.4599 43.6158Z" fill="#EFEFEF"/><path d="M165.195 43.6158C158.781 1.13294 110.526 9.8443e-05 87.6205 7.07283e-05V119.235C92.8125 123.767 115.12 123.598 122.437 123.2C185.046 119.802 195.736 70.2385 165.195 43.6158Z" fill="#EFEFEF"/></svg>`;
+  const animatedButtonStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: buttonScale.value }],
+  }));
 
-// Cheeks (gradient only, no black overlay)
-const svgCheeks = `<svg viewBox="0 0 80.6283 51.3089" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="cg0" x1="23.0224" y1="19.2883" x2="23.0224" y2="43.3655" gradientUnits="userSpaceOnUse"><stop stop-color="#EFEFEF"/><stop offset="1" stop-color="#DDD9DE"/></linearGradient><linearGradient id="cg1" x1="57.6059" y1="19.4975" x2="57.6059" y2="43.9569" gradientUnits="userSpaceOnUse"><stop stop-color="#EFEFEF"/><stop offset="1" stop-color="#DDD9DE"/></linearGradient></defs><path d="M12.0103 10.0975C21.0928 3.0475 37.7795 5.4052 40.3141 16.6667V36.1397C33.3438 47.1667 16.8684 45.9936 11.1654 40.5974C5.69853 35.4246 2.92767 17.1476 12.0103 10.0975Z" fill="url(#cg0)"/><path d="M68.6181 10.1609C59.5355 2.99891 42.8489 5.39402 40.3142 16.8343V36.6164C47.2846 47.8184 63.76 46.6267 69.463 41.1448C74.9298 35.89 77.7007 17.3228 68.6181 10.1609Z" fill="url(#cg1)"/></svg>`;
+  const formatDate = (d: Date) => {
+    return d.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    });
+  };
 
-// Eye patches (fill-0 + fill-1 black → black eye patches)
-const svgEyePatches = `<svg viewBox="0 0 123.114 38.3796" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.7791 12.6331C15.8332 6.83012 24.9955 -2.02677 39.0444 0.416521C57.0644 3.55044 46.0688 23.3222 34.7686 30.6521C21.0157 39.573 2.94371 42.9236 0.257268 28.8196C-1.89513 17.5195 10.0881 17.7461 12.7791 12.6331Z" fill="#D0ACDC"/>
-<path d="M12.7791 12.6331C15.8332 6.83012 24.9955 -2.02677 39.0444 0.416521C57.0644 3.55044 46.0688 23.3222 34.7686 30.6521C21.0157 39.573 2.94371 42.9236 0.257268 28.8196C-1.89513 17.5195 10.0881 17.7461 12.7791 12.6331Z" fill="black"/>
-<path d="M110.335 12.6331C107.28 6.83017 98.1181 -2.02672 84.0693 0.416569C66.0493 3.55049 77.0448 23.3223 88.345 30.6522C102.098 39.5731 120.17 42.9236 122.856 28.8197C125.009 17.5195 113.026 17.7462 110.335 12.6331Z" fill="#D0ACDC"/>
-<path d="M110.335 12.6331C107.28 6.83017 98.1181 -2.02672 84.0693 0.416569C66.0493 3.55049 77.0448 23.3223 88.345 30.6522C102.098 39.5731 120.17 42.9236 122.856 28.8197C125.009 17.5195 113.026 17.7462 110.335 12.6331Z" fill="black"/>
-</svg>`;
+  const handleSearch = useCallback(async () => {
+    setError(null);
 
-// Nose (fill-0 + fill-1 black → black nose)
-const svgNose = `<svg viewBox="0 0 24.8666 16.4923" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.04936 2.74869C4.99437 4.77669e-05 8.463 -4.45811e-05 12.4333 3.56803e-07L12.4333 16.4921C8.46298 16.4921 6.3251 14.9651 6.3251 11.911C2.04938 12.8272 -2.85907 7.32984 2.04936 2.74869Z" fill="#D0ACDC"/>
-<path d="M2.04936 2.74869C4.99437 4.77669e-05 8.463 -4.45811e-05 12.4333 3.56803e-07L12.4333 16.4921C8.46298 16.4921 6.3251 14.9651 6.3251 11.911C2.04938 12.8272 -2.85907 7.32984 2.04936 2.74869Z" fill="black"/>
-<path d="M22.8172 2.74881C19.8722 0.000168772 16.4036 7.6424e-05 12.4333 0.000121362L12.4333 16.4923C16.4036 16.4923 18.5415 14.9652 18.5415 11.9111C22.8172 12.8273 27.7257 7.32996 22.8172 2.74881Z" fill="#D0ACDC"/>
-<path d="M22.8172 2.74881C19.8722 0.000168772 16.4036 7.6424e-05 12.4333 0.000121362L12.4333 16.4923C16.4036 16.4923 18.5415 14.9652 18.5415 11.9111C22.8172 12.8273 27.7257 7.32996 22.8172 2.74881Z" fill="black"/>
-</svg>`;
+    if (!origin) {
+      setError("Please select an origin airport");
+      return;
+    }
+    if (!destination) {
+      setError("Please select a destination airport");
+      return;
+    }
+    if (origin.code === destination.code) {
+      setError("Origin and destination cannot be the same");
+      return;
+    }
 
-// Feet back (fill-0 white + fill-1 black → black feet)
-const svgFeetBack = `<svg viewBox="0 0 161.987 98.3274" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M56.4762 48.1948C77.8549 35.673 103.638 -4.58145 136.494 8.79675C187.497 29.5646 125.809 82.6858 89.5051 88.283C66.2493 91.8685 16.6172 97.9071 7.61056 79.9575C-2.95133 58.9085 45.2454 54.7729 56.4762 48.1948Z" fill="white"/>
-<path d="M56.4762 48.1948C77.8549 35.673 103.638 -4.58145 136.494 8.79675C187.497 29.5646 125.809 82.6858 89.5051 88.283C66.2493 91.8685 16.6172 97.9071 7.61056 79.9575C-2.95133 58.9085 45.2454 54.7729 56.4762 48.1948Z" fill="black"/>
-</svg>`;
+    setIsSearching(true);
 
-// Feet front (fill-0 + fill-1 black → black feet)
-const svgFeetFront = `<svg viewBox="0 0 190.481 134.124" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M70.5009 64.1658C81.086 41.7649 84.6473 -7.14841 150.824 9.4973C200.606 22.0192 187.497 72.8537 159.681 96.8448C100.431 147.946 0.382659 127.646 6.36472 96.8448C11.8621 68.5391 57.3682 91.958 70.5009 64.1658Z" fill="#D0ACDC"/>
-<path d="M70.5009 64.1658C81.086 41.7649 84.6473 -7.14841 150.824 9.4973C200.606 22.0192 187.497 72.8537 159.681 96.8448C100.431 147.946 0.382659 127.646 6.36472 96.8448C11.8621 68.5391 57.3682 91.958 70.5009 64.1658Z" fill="black"/>
-</svg>`;
+    // Log search to Supabase
+    try {
+      await supabase.from("search_logs").insert({
+        origin_code: origin.code,
+        destination_code: destination.code,
+        travel_date: date.toISOString().split("T")[0],
+      });
+    } catch (e) {
+      // Non-blocking: don't prevent search if logging fails
+      console.warn("Search log failed:", e);
+    }
 
-const X_PATH = "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z";
-const LINKEDIN_PATH = "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z";
+    // Navigate to results
+    router.push({
+      pathname: "/results",
+      params: {
+        origin: origin.code,
+        destination: destination.code,
+        date: date.toISOString().split("T")[0],
+        originCity: origin.city,
+        destinationCity: destination.city,
+      },
+    });
 
-export default function Index() {
+    setIsSearching(false);
+  }, [origin, destination, date, router]);
+
   return (
-    <View style={styles.container}>
-      <View style={styles.panda}>
-        <View style={[styles.layer, { left: "37.7%", top: "19.6%", width: "62.3%", height: "71.4%" }]}>
-          <SvgXml xml={svgBody} width="100%" height="100%" />
-        </View>
-        <View style={[styles.layer, { left: "40.8%", top: "0%", width: "45.8%", height: "12.45%" }]}>
-          <SvgXml xml={svgEars} width="100%" height="100%" />
-        </View>
-        <View style={[styles.layer, { left: "37.7%", top: "19.6%", width: "62.3%", height: "71.4%" }]}>
-          <SvgXml xml={svgBodyMask} width="100%" height="100%" />
-        </View>
-        <View style={[styles.layer, { left: "37.7%", top: "5.2%", width: "51.9%", height: "35.5%" }]}>
-          <SvgXml xml={svgHead} width="100%" height="100%" />
-        </View>
-        <View style={[styles.layer, { left: "53.8%", top: "23.48%", width: "19.5%", height: "11.25%" }]}>
-          <SvgXml xml={svgCheeks} width="100%" height="100%" />
-        </View>
-        <View style={[styles.layer, { left: "45.9%", top: "14.16%", width: "35.2%", height: "11.04%" }]}>
-          <SvgXml xml={svgEyePatches} width="100%" height="100%" />
-        </View>
-        <View style={[styles.layer, { left: "60%", top: "26.65%", width: "7.1%", height: "4.74%" }]}>
-          <SvgXml xml={svgNose} width="100%" height="100%" />
-        </View>
-        <View style={[styles.layer, { left: "0%", top: "32.86%", width: "66.7%", height: "67.1%" }]}>
-          <Image
-            source={require("../assets/images/panda-eye.png")}
-            style={{ width: "100%", height: "100%" }}
-            resizeMode="contain"
-          />
-        </View>
-        <View style={[styles.layer, { left: "51.8%", top: "39.02%", width: "42.8%", height: "24.78%" }]}>
-          <SvgXml xml={svgFeetBack} width="100%" height="100%" />
-        </View>
-        <View style={[styles.layer, { left: "45.8%", top: "64.06%", width: "50.9%", height: "35.07%" }]}>
-          <SvgXml xml={svgFeetFront} width="100%" height="100%" />
-        </View>
-      </View>
+    <View style={{ flex: 1, backgroundColor: Colors.background }}>
+      {/* Gradient Hero Background */}
+      <LinearGradient
+        colors={["#4A3FBF", "#6C63FF", "#9B8FFF"]}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          height: "65%",
+          borderBottomLeftRadius: 32,
+          borderBottomRightRadius: 32,
+        }}
+      />
 
-      <Text style={styles.followText}>✦ follow us ✦</Text>
+      <ScrollView
+        contentContainerStyle={{
+          paddingTop: insets.top + 20,
+          paddingBottom: insets.bottom + 40,
+          paddingHorizontal: 20,
+        }}
+        keyboardShouldPersistTaps="handled"
+        showsVerticalScrollIndicator={false}
+      >
+        {/* Header / Branding */}
+        <Animated.View
+          entering={FadeInUp.delay(100).duration(600)}
+          style={{ alignItems: "center", marginBottom: 32 }}
+        >
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 8,
+              marginBottom: 8,
+            }}
+          >
+            <Ionicons name="airplane" size={28} color="#FFFFFF" />
+            <Text
+              style={{
+                fontFamily: Fonts.bold,
+                fontSize: 32,
+                color: "#FFFFFF",
+                letterSpacing: -0.5,
+              }}
+            >
+              TripVibe
+            </Text>
+          </View>
+          <Text
+            style={{
+              fontFamily: Fonts.medium,
+              fontSize: 15,
+              color: "rgba(255,255,255,0.8)",
+              letterSpacing: 0.2,
+            }}
+          >
+            Find your next adventure
+          </Text>
+        </Animated.View>
 
-      <View style={styles.social}>
-        <TouchableOpacity
-          onPress={() => Linking.openURL("https://x.com/fastshot_ai")}
-          style={styles.iconBtn}
-          activeOpacity={0.65}
+        {/* Search Card */}
+        <Animated.View
+          entering={FadeInDown.delay(200).duration(600).springify()}
+          style={{
+            backgroundColor: Colors.card,
+            borderRadius: 20,
+            padding: 20,
+            boxShadow: "0 12px 40px rgba(0,0,0,0.15)",
+            borderCurve: "continuous",
+            gap: 16,
+          }}
         >
-          <Svg width={22} height={22} viewBox="0 0 24 24">
-            <Path d={X_PATH} fill="#111111" />
-          </Svg>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => Linking.openURL("https://www.linkedin.com/company/fastshot")}
-          style={styles.iconBtn}
-          activeOpacity={0.65}
+          {/* Origin Input */}
+          <View style={{ zIndex: 30 }}>
+            <AirportAutocomplete
+              label="Origin"
+              placeholder="Where from?"
+              value={origin?.city || ""}
+              onSelect={setOrigin}
+              icon="location-outline"
+            />
+          </View>
+
+          {/* Divider with swap icon */}
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 12,
+              zIndex: 1,
+            }}
+          >
+            <View
+              style={{ flex: 1, height: 1, backgroundColor: Colors.border }}
+            />
+            <Pressable
+              onPress={() => {
+                if (origin && destination) {
+                  const temp = origin;
+                  setOrigin(destination);
+                  setDestination(temp);
+                }
+              }}
+              style={{
+                width: 32,
+                height: 32,
+                borderRadius: 16,
+                backgroundColor: `${Colors.primary}10`,
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Ionicons
+                name="swap-vertical"
+                size={16}
+                color={Colors.primary}
+              />
+            </Pressable>
+            <View
+              style={{ flex: 1, height: 1, backgroundColor: Colors.border }}
+            />
+          </View>
+
+          {/* Destination Input */}
+          <View style={{ zIndex: 20 }}>
+            <AirportAutocomplete
+              label="Destination"
+              placeholder="Where to?"
+              value={destination?.city || ""}
+              onSelect={setDestination}
+              icon="navigate-outline"
+            />
+          </View>
+
+          {/* Date Picker */}
+          <View style={{ zIndex: 10 }}>
+            <Text
+              style={{
+                fontFamily: Fonts.medium,
+                fontSize: 12,
+                color: Colors.textSecondary,
+                marginBottom: 6,
+                letterSpacing: 0.3,
+              }}
+            >
+              Departure Date
+            </Text>
+            <Pressable
+              onPress={() => setShowDatePicker(true)}
+              style={{
+                flexDirection: "row",
+                alignItems: "center",
+                backgroundColor: Colors.background,
+                borderRadius: 12,
+                paddingHorizontal: 14,
+                paddingVertical: 14,
+                gap: 10,
+              }}
+            >
+              <Ionicons
+                name="calendar-outline"
+                size={18}
+                color={Colors.primary}
+              />
+              <Text
+                style={{
+                  fontFamily: Fonts.medium,
+                  fontSize: 15,
+                  color: Colors.textPrimary,
+                }}
+              >
+                {formatDate(date)}
+              </Text>
+            </Pressable>
+
+            {showDatePicker && !isWeb && (
+              <View style={{ marginTop: 8 }}>
+                <DateTimePicker
+                  value={date}
+                  mode="date"
+                  display={Platform.OS === "ios" ? "spinner" : "default"}
+                  minimumDate={new Date()}
+                  onChange={(event, selectedDate) => {
+                    setShowDatePicker(Platform.OS === "ios");
+                    if (selectedDate) {
+                      setDate(selectedDate);
+                    }
+                  }}
+                  themeVariant="light"
+                />
+                {Platform.OS === "ios" && (
+                  <Pressable
+                    onPress={() => setShowDatePicker(false)}
+                    style={{
+                      alignSelf: "flex-end",
+                      paddingVertical: 8,
+                      paddingHorizontal: 16,
+                    }}
+                  >
+                    <Text
+                      style={{
+                        fontFamily: Fonts.semiBold,
+                        fontSize: 14,
+                        color: Colors.primary,
+                      }}
+                    >
+                      Done
+                    </Text>
+                  </Pressable>
+                )}
+              </View>
+            )}
+            {showDatePicker && isWeb && (
+              <View
+                style={{
+                  marginTop: 8,
+                  backgroundColor: Colors.card,
+                  borderRadius: 12,
+                  padding: 12,
+                  borderWidth: 1,
+                  borderColor: Colors.border,
+                }}
+              >
+                <input
+                  type="date"
+                  value={date.toISOString().split("T")[0]}
+                  min={new Date().toISOString().split("T")[0]}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                    const newDate = new Date(e.target.value + "T00:00:00");
+                    if (!isNaN(newDate.getTime())) {
+                      setDate(newDate);
+                    }
+                    setShowDatePicker(false);
+                  }}
+                  style={{
+                    width: "100%",
+                    padding: 10,
+                    fontSize: 15,
+                    border: "none",
+                    outline: "none",
+                    fontFamily: "Plus Jakarta Sans, sans-serif",
+                    color: Colors.textPrimary,
+                    backgroundColor: "transparent",
+                  }}
+                />
+              </View>
+            )}
+          </View>
+
+          {/* Error message */}
+          {error && (
+            <Animated.View entering={FadeInDown.duration(300)}>
+              <Text
+                selectable
+                style={{
+                  fontFamily: Fonts.medium,
+                  fontSize: 13,
+                  color: Colors.accent,
+                  textAlign: "center",
+                }}
+              >
+                {error}
+              </Text>
+            </Animated.View>
+          )}
+
+          {/* Search Button */}
+          <Animated.View style={animatedButtonStyle}>
+            <Pressable
+              onPress={handleSearch}
+              onPressIn={() => {
+                buttonScale.value = withSpring(0.96);
+              }}
+              onPressOut={() => {
+                buttonScale.value = withSpring(1);
+              }}
+              disabled={isSearching}
+              style={{
+                backgroundColor: Colors.accent,
+                borderRadius: 14,
+                paddingVertical: 16,
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "row",
+                gap: 8,
+                opacity: isSearching ? 0.7 : 1,
+                borderCurve: "continuous",
+              }}
+            >
+              <Ionicons name="search" size={18} color="#FFFFFF" />
+              <Text
+                style={{
+                  fontFamily: Fonts.bold,
+                  fontSize: 16,
+                  color: "#FFFFFF",
+                  letterSpacing: 0.3,
+                }}
+              >
+                {isSearching ? "Searching..." : "Search Flights"}
+              </Text>
+            </Pressable>
+          </Animated.View>
+        </Animated.View>
+
+        {/* Bottom decorative elements */}
+        <Animated.View
+          entering={FadeInDown.delay(400).duration(600)}
+          style={{
+            marginTop: 32,
+            alignItems: "center",
+            gap: 12,
+          }}
         >
-          <Svg width={22} height={22} viewBox="0 0 24 24">
-            <Path d={LINKEDIN_PATH} fill="#0A66C2" />
-          </Svg>
-        </TouchableOpacity>
-      </View>
+          <View
+            style={{ flexDirection: "row", alignItems: "center", gap: 16 }}
+          >
+            <View
+              style={{
+                flexDirection: "row",
+                alignItems: "center",
+                gap: 6,
+              }}
+            >
+              <Ionicons name="shield-checkmark" size={16} color={Colors.success} />
+              <Text
+                style={{
+                  fontFamily: Fonts.medium,
+                  fontSize: 12,
+                  color: Colors.textSecondary,
+                }}
+              >
+                Best Price Guarantee
+              </Text>
+            </View>
+            <View
+              style={{
+                flexDirection: "row",
+                alignItems: "center",
+                gap: 6,
+              }}
+            >
+              <Ionicons name="flash" size={16} color={Colors.warning} />
+              <Text
+                style={{
+                  fontFamily: Fonts.medium,
+                  fontSize: 12,
+                  color: Colors.textSecondary,
+                }}
+              >
+                Instant Booking
+              </Text>
+            </View>
+          </View>
+        </Animated.View>
+      </ScrollView>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#FFFFFF",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  panda: {
-    width: PANDA_SIZE,
-    height: PANDA_SIZE,
-    position: "relative",
-  },
-  layer: {
-    position: "absolute",
-  },
-  followText: {
-    fontFamily: "Inter_600SemiBold",
-    fontStyle: "italic",
-    fontSize: 13,
-    letterSpacing: 3,
-    color: "#B09BC0",
-    marginTop: 28,
-    marginBottom: 14,
-    textTransform: "lowercase",
-  },
-  social: {
-    flexDirection: "row",
-    gap: 8,
-  },
-  iconBtn: {
-    padding: 10,
-  },
-});
