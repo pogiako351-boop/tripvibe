@@ -4,17 +4,22 @@ import { useFonts } from "expo-font";
 import { FontMap } from "@/constants/Typography";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
+import { Platform } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
-SplashScreen.preventAutoHideAsync();
+if (Platform.OS !== "web") {
+  SplashScreen.preventAutoHideAsync();
+}
 
 export default function RootLayout() {
   const [loaded, error] = useFonts(FontMap);
 
   useEffect(() => {
     if (loaded || error) {
-      SplashScreen.hideAsync();
+      if (Platform.OS !== "web") {
+        SplashScreen.hideAsync();
+      }
     }
   }, [loaded, error]);
 
