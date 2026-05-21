@@ -21,6 +21,7 @@ import { Colors } from "@/constants/Colors";
 import { Fonts } from "@/constants/Typography";
 import { Airport } from "@/constants/Airports";
 import { AirportAutocomplete } from "@/components/airport-autocomplete";
+import { LegalFooter } from "@/components/legal-footer";
 import { supabase } from "@/lib/supabase";
 import DateTimePicker from "@react-native-community/datetimepicker";
 
@@ -453,6 +454,14 @@ export default function HomeScreen() {
               </Text>
             </View>
           </View>
+        </Animated.View>
+
+        {/* Legal Footer */}
+        <Animated.View
+          entering={FadeInDown.delay(500).duration(600)}
+          style={{ marginTop: 24 }}
+        >
+          <LegalFooter />
         </Animated.View>
       </ScrollView>
     </View>
