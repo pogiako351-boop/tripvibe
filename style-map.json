@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1779336192997,
+  "generatedAt": 1779338196053,
   "entries": {
     "RootLayout@app/_layout.tsx:31": {
       "element": {
@@ -17,400 +17,6 @@
               "col": 43,
               "endCol": 44,
               "raw": "1"
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:66": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 66
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "flex": {
-              "line": 66,
-              "col": 25,
-              "endCol": 26,
-              "raw": "1"
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:68": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 68
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "paddingHorizontal": {
-              "line": 71,
-              "col": 29,
-              "endCol": 31,
-              "raw": "20"
-            },
-            "paddingBottom": {
-              "line": 72,
-              "col": 25,
-              "endCol": 27,
-              "raw": "12"
-            },
-            "boxShadow": {
-              "line": 74,
-              "col": 21,
-              "endCol": 50,
-              "raw": "\"0 2px 12px rgba(0,0,0,0.06)\""
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:77": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 77
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "flexDirection": {
-              "line": 80,
-              "col": 27,
-              "endCol": 32,
-              "raw": "\"row\""
-            },
-            "alignItems": {
-              "line": 81,
-              "col": 24,
-              "endCol": 32,
-              "raw": "\"center\""
-            },
-            "gap": {
-              "line": 82,
-              "col": 17,
-              "endCol": 19,
-              "raw": "12"
-            },
-            "marginBottom": {
-              "line": 83,
-              "col": 26,
-              "endCol": 28,
-              "raw": "14"
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:86": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 86
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "width": {
-              "line": 89,
-              "col": 21,
-              "endCol": 23,
-              "raw": "36"
-            },
-            "height": {
-              "line": 90,
-              "col": 22,
-              "endCol": 24,
-              "raw": "36"
-            },
-            "borderRadius": {
-              "line": 91,
-              "col": 28,
-              "endCol": 30,
-              "raw": "18"
-            },
-            "alignItems": {
-              "line": 93,
-              "col": 26,
-              "endCol": 34,
-              "raw": "\"center\""
-            },
-            "justifyContent": {
-              "line": 94,
-              "col": 30,
-              "endCol": 38,
-              "raw": "\"center\""
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:99": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 99
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "flex": {
-              "line": 99,
-              "col": 31,
-              "endCol": 32,
-              "raw": "1"
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:100": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 100
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 103,
-              "col": 26,
-              "endCol": 28,
-              "raw": "17"
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:110": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 110
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 113,
-              "col": 26,
-              "endCol": 28,
-              "raw": "13"
-            },
-            "marginTop": {
-              "line": 115,
-              "col": 27,
-              "endCol": 28,
-              "raw": "2"
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:131": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 131
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "paddingHorizontal": {
-              "line": 134,
-              "col": 33,
-              "endCol": 35,
-              "raw": "10"
-            },
-            "paddingVertical": {
-              "line": 135,
-              "col": 31,
-              "endCol": 32,
-              "raw": "4"
-            },
-            "borderRadius": {
-              "line": 136,
-              "col": 28,
-              "endCol": 30,
-              "raw": "12"
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:139": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 139
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 142,
-              "col": 26,
-              "endCol": 28,
-              "raw": "12"
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:152": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 152
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "flexDirection": {
-              "line": 155,
-              "col": 27,
-              "endCol": 32,
-              "raw": "\"row\""
-            },
-            "gap": {
-              "line": 156,
-              "col": 17,
-              "endCol": 19,
-              "raw": "10"
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:159": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 159
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "paddingHorizontal": {
-              "line": 162,
-              "col": 33,
-              "endCol": 35,
-              "raw": "16"
-            },
-            "paddingVertical": {
-              "line": 163,
-              "col": 31,
-              "endCol": 32,
-              "raw": "8"
-            },
-            "borderRadius": {
-              "line": 164,
-              "col": 28,
-              "endCol": 30,
-              "raw": "20"
-            },
-            "borderCurve": {
-              "line": 167,
-              "col": 27,
-              "endCol": 39,
-              "raw": "\"continuous\""
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:170": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 170
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 173,
-              "col": 26,
-              "endCol": 28,
-              "raw": "13"
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:181": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 181
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "paddingHorizontal": {
-              "line": 184,
-              "col": 33,
-              "endCol": 35,
-              "raw": "16"
-            },
-            "paddingVertical": {
-              "line": 185,
-              "col": 31,
-              "endCol": 32,
-              "raw": "8"
-            },
-            "borderRadius": {
-              "line": 186,
-              "col": 28,
-              "endCol": 30,
-              "raw": "20"
-            },
-            "borderCurve": {
-              "line": 189,
-              "col": 27,
-              "endCol": 39,
-              "raw": "\"continuous\""
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:192": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 192
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 195,
-              "col": 26,
-              "endCol": 28,
-              "raw": "13"
             }
           }
         }
@@ -1420,969 +1026,395 @@
         }
       ]
     },
-    "AdCard@components/ad-card.tsx:14": {
+    "ResultsScreen@app/results.tsx:66": {
       "element": {
-        "file": "components/ad-card.tsx",
-        "line": 14
+        "file": "app/results.tsx",
+        "line": 66
       },
       "styles": [
         {
           "origin": "inline",
-          "file": "components/ad-card.tsx",
+          "file": "app/results.tsx",
           "properties": {
-            "borderRadius": {
-              "line": 18,
-              "col": 22,
-              "endCol": 24,
-              "raw": "16"
-            },
-            "padding": {
-              "line": 19,
-              "col": 17,
-              "endCol": 19,
-              "raw": "16"
-            },
-            "boxShadow": {
-              "line": 20,
-              "col": 19,
-              "endCol": 48,
-              "raw": "\"0 4px 20px rgba(0,0,0,0.08)\""
-            },
-            "borderCurve": {
-              "line": 21,
-              "col": 21,
-              "endCol": 33,
-              "raw": "\"continuous\""
-            },
-            "borderWidth": {
-              "line": 22,
-              "col": 21,
-              "endCol": 22,
+            "flex": {
+              "line": 66,
+              "col": 25,
+              "endCol": 26,
               "raw": "1"
             }
           }
         }
       ]
     },
-    "AdCard@components/ad-card.tsx:27": {
+    "ResultsScreen@app/results.tsx:68": {
       "element": {
-        "file": "components/ad-card.tsx",
-        "line": 27
+        "file": "app/results.tsx",
+        "line": 68
       },
       "styles": [
         {
           "origin": "inline",
-          "file": "components/ad-card.tsx",
+          "file": "app/results.tsx",
           "properties": {
-            "position": {
-              "line": 29,
-              "col": 20,
-              "endCol": 30,
-              "raw": "\"absolute\""
-            },
-            "top": {
-              "line": 30,
-              "col": 15,
-              "endCol": 17,
-              "raw": "10"
-            },
-            "right": {
-              "line": 31,
-              "col": 17,
-              "endCol": 19,
-              "raw": "10"
-            },
             "paddingHorizontal": {
-              "line": 33,
+              "line": 71,
               "col": 29,
-              "endCol": 30,
-              "raw": "8"
+              "endCol": 31,
+              "raw": "20"
             },
-            "paddingVertical": {
-              "line": 34,
-              "col": 27,
-              "endCol": 28,
-              "raw": "3"
+            "paddingBottom": {
+              "line": 72,
+              "col": 25,
+              "endCol": 27,
+              "raw": "12"
             },
-            "borderRadius": {
-              "line": 35,
-              "col": 24,
-              "endCol": 25,
-              "raw": "4"
+            "boxShadow": {
+              "line": 74,
+              "col": 21,
+              "endCol": 50,
+              "raw": "\"0 2px 12px rgba(0,0,0,0.06)\""
             }
           }
         }
       ]
     },
-    "AdCard@components/ad-card.tsx:38": {
+    "ResultsScreen@app/results.tsx:77": {
       "element": {
-        "file": "components/ad-card.tsx",
-        "line": 38
+        "file": "app/results.tsx",
+        "line": 77
       },
       "styles": [
         {
           "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 41,
-              "col": 22,
-              "endCol": 24,
-              "raw": "10"
-            },
-            "letterSpacing": {
-              "line": 43,
-              "col": 27,
-              "endCol": 30,
-              "raw": "0.3"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:50": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 50
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
+          "file": "app/results.tsx",
           "properties": {
             "flexDirection": {
-              "line": 50,
-              "col": 36,
-              "endCol": 41,
+              "line": 80,
+              "col": 27,
+              "endCol": 32,
               "raw": "\"row\""
             },
             "alignItems": {
-              "line": 50,
-              "col": 55,
-              "endCol": 63,
-              "raw": "\"center\""
-            },
-            "gap": {
-              "line": 50,
-              "col": 70,
-              "endCol": 72,
-              "raw": "14"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:52": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 52
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "width": {
-              "line": 54,
-              "col": 19,
-              "endCol": 21,
-              "raw": "64"
-            },
-            "height": {
-              "line": 55,
-              "col": 20,
-              "endCol": 22,
-              "raw": "64"
-            },
-            "borderRadius": {
-              "line": 56,
-              "col": 26,
-              "endCol": 28,
-              "raw": "12"
-            },
-            "alignItems": {
-              "line": 58,
+              "line": 81,
               "col": 24,
               "endCol": 32,
               "raw": "\"center\""
             },
-            "justifyContent": {
-              "line": 59,
-              "col": 28,
-              "endCol": 36,
-              "raw": "\"center\""
-            },
-            "borderCurve": {
-              "line": 60,
-              "col": 25,
-              "endCol": 37,
-              "raw": "\"continuous\""
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:63": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 63
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "width": {
-              "line": 67,
-              "col": 28,
-              "endCol": 30,
-              "raw": "40"
-            },
-            "height": {
-              "line": 67,
-              "col": 40,
-              "endCol": 42,
-              "raw": "40"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:73": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 73
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "flex": {
-              "line": 73,
-              "col": 29,
-              "endCol": 30,
-              "raw": "1"
-            },
             "gap": {
-              "line": 73,
-              "col": 37,
-              "endCol": 38,
-              "raw": "4"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:74": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 74
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 77,
-              "col": 24,
-              "endCol": 26,
-              "raw": "14"
-            },
-            "lineHeight": {
-              "line": 79,
-              "col": 26,
-              "endCol": 28,
-              "raw": "20"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:84": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 84
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 87,
-              "col": 24,
-              "endCol": 26,
-              "raw": "12"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:96": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 96
-      },
-      "styles": [
-        {
-          "origin": "dynamic",
-          "resolvable": false
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:108": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 108
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 111,
-              "col": 24,
-              "endCol": 26,
-              "raw": "11"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:20": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 20
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "borderRadius": {
-              "line": 24,
-              "col": 22,
-              "endCol": 24,
-              "raw": "16"
-            },
-            "padding": {
-              "line": 25,
+              "line": 82,
               "col": 17,
               "endCol": 19,
-              "raw": "16"
-            },
-            "boxShadow": {
-              "line": 26,
-              "col": 19,
-              "endCol": 48,
-              "raw": "\"0 4px 20px rgba(0,0,0,0.08)\""
-            },
-            "borderCurve": {
-              "line": 27,
-              "col": 21,
-              "endCol": 33,
-              "raw": "\"continuous\""
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:30": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 30
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "flexDirection": {
-              "line": 32,
-              "col": 25,
-              "endCol": 30,
-              "raw": "\"row\""
-            },
-            "alignItems": {
-              "line": 33,
-              "col": 22,
-              "endCol": 30,
-              "raw": "\"center\""
-            },
-            "justifyContent": {
-              "line": 34,
-              "col": 26,
-              "endCol": 41,
-              "raw": "\"space-between\""
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:38": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 38
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "flex": {
-              "line": 38,
-              "col": 29,
-              "endCol": 30,
-              "raw": "1"
-            },
-            "gap": {
-              "line": 38,
-              "col": 37,
-              "endCol": 39,
-              "raw": "10"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:40": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 40
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "flexDirection": {
-              "line": 40,
-              "col": 40,
-              "endCol": 45,
-              "raw": "\"row\""
-            },
-            "alignItems": {
-              "line": 40,
-              "col": 59,
-              "endCol": 67,
-              "raw": "\"center\""
-            },
-            "gap": {
-              "line": 40,
-              "col": 74,
-              "endCol": 75,
-              "raw": "8"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:41": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 41
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "width": {
-              "line": 43,
-              "col": 23,
-              "endCol": 25,
-              "raw": "32"
-            },
-            "height": {
-              "line": 44,
-              "col": 24,
-              "endCol": 26,
-              "raw": "32"
-            },
-            "borderRadius": {
-              "line": 45,
-              "col": 30,
-              "endCol": 31,
-              "raw": "8"
-            },
-            "alignItems": {
-              "line": 47,
-              "col": 28,
-              "endCol": 36,
-              "raw": "\"center\""
-            },
-            "justifyContent": {
-              "line": 48,
-              "col": 32,
-              "endCol": 40,
-              "raw": "\"center\""
-            },
-            "overflow": {
-              "line": 49,
-              "col": 26,
-              "endCol": 34,
-              "raw": "\"hidden\""
-            },
-            "borderCurve": {
-              "line": 50,
-              "col": 29,
-              "endCol": 41,
-              "raw": "\"continuous\""
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:53": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 53
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "width": {
-              "line": 55,
-              "col": 32,
-              "endCol": 34,
-              "raw": "24"
-            },
-            "height": {
-              "line": 55,
-              "col": 44,
-              "endCol": 46,
-              "raw": "24"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:59": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 59
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 62,
-              "col": 26,
-              "endCol": 28,
               "raw": "12"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:71": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 71
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "flexDirection": {
-              "line": 71,
-              "col": 40,
-              "endCol": 45,
-              "raw": "\"row\""
             },
-            "alignItems": {
-              "line": 71,
-              "col": 59,
-              "endCol": 67,
-              "raw": "\"center\""
-            },
-            "gap": {
-              "line": 71,
-              "col": 74,
-              "endCol": 75,
-              "raw": "8"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:72": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 72
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 75,
+            "marginBottom": {
+              "line": 83,
               "col": 26,
               "endCol": 28,
-              "raw": "16"
+              "raw": "14"
             }
           }
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:82": {
+    "ResultsScreen@app/results.tsx:86": {
       "element": {
-        "file": "components/flight-card.tsx",
-        "line": 82
+        "file": "app/results.tsx",
+        "line": 86
       },
       "styles": [
         {
           "origin": "inline",
-          "file": "components/flight-card.tsx",
+          "file": "app/results.tsx",
           "properties": {
-            "flex": {
-              "line": 82,
-              "col": 33,
-              "endCol": 34,
-              "raw": "1"
+            "width": {
+              "line": 89,
+              "col": 21,
+              "endCol": 23,
+              "raw": "36"
+            },
+            "height": {
+              "line": 90,
+              "col": 22,
+              "endCol": 24,
+              "raw": "36"
+            },
+            "borderRadius": {
+              "line": 91,
+              "col": 28,
+              "endCol": 30,
+              "raw": "18"
             },
             "alignItems": {
-              "line": 82,
-              "col": 48,
-              "endCol": 56,
+              "line": 93,
+              "col": 26,
+              "endCol": 34,
               "raw": "\"center\""
             },
-            "gap": {
-              "line": 82,
-              "col": 63,
-              "endCol": 64,
-              "raw": "4"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:83": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 83
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "flexDirection": {
-              "line": 85,
-              "col": 33,
-              "endCol": 38,
-              "raw": "\"row\""
-            },
-            "alignItems": {
-              "line": 86,
+            "justifyContent": {
+              "line": 94,
               "col": 30,
               "endCol": 38,
               "raw": "\"center\""
-            },
-            "width": {
-              "line": 87,
-              "col": 25,
-              "endCol": 31,
-              "raw": "\"100%\""
-            },
-            "paddingHorizontal": {
-              "line": 88,
-              "col": 37,
-              "endCol": 38,
-              "raw": "4"
             }
           }
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:91": {
+    "ResultsScreen@app/results.tsx:99": {
       "element": {
-        "file": "components/flight-card.tsx",
-        "line": 91
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "width": {
-              "line": 93,
-              "col": 27,
-              "endCol": 28,
-              "raw": "6"
-            },
-            "height": {
-              "line": 94,
-              "col": 28,
-              "endCol": 29,
-              "raw": "6"
-            },
-            "borderRadius": {
-              "line": 95,
-              "col": 34,
-              "endCol": 35,
-              "raw": "3"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:99": {
-      "element": {
-        "file": "components/flight-card.tsx",
+        "file": "app/results.tsx",
         "line": 99
       },
       "styles": [
         {
           "origin": "inline",
-          "file": "components/flight-card.tsx",
+          "file": "app/results.tsx",
           "properties": {
             "flex": {
-              "line": 101,
-              "col": 26,
-              "endCol": 27,
+              "line": 99,
+              "col": 31,
+              "endCol": 32,
               "raw": "1"
-            },
-            "height": {
-              "line": 102,
-              "col": 28,
-              "endCol": 31,
-              "raw": "1.5"
             }
           }
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:106": {
+    "ResultsScreen@app/results.tsx:100": {
       "element": {
-        "file": "components/flight-card.tsx",
-        "line": 106
+        "file": "app/results.tsx",
+        "line": 100
       },
       "styles": [
         {
           "origin": "inline",
-          "file": "components/flight-card.tsx",
+          "file": "app/results.tsx",
           "properties": {
-            "width": {
-              "line": 108,
+            "fontSize": {
+              "line": 103,
+              "col": 26,
+              "endCol": 28,
+              "raw": "17"
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:110": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 110
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 113,
+              "col": 26,
+              "endCol": 28,
+              "raw": "13"
+            },
+            "marginTop": {
+              "line": 115,
               "col": 27,
               "endCol": 28,
-              "raw": "0"
-            },
-            "height": {
-              "line": 109,
-              "col": 28,
-              "endCol": 29,
-              "raw": "0"
-            },
-            "borderLeftWidth": {
-              "line": 110,
-              "col": 37,
-              "endCol": 38,
-              "raw": "6"
-            },
-            "borderTopWidth": {
-              "line": 111,
-              "col": 36,
-              "endCol": 37,
-              "raw": "4"
-            },
-            "borderBottomWidth": {
-              "line": 112,
-              "col": 39,
-              "endCol": 40,
-              "raw": "4"
-            },
-            "borderTopColor": {
-              "line": 114,
-              "col": 36,
-              "endCol": 49,
-              "raw": "\"transparent\""
-            },
-            "borderBottomColor": {
-              "line": 115,
-              "col": 39,
-              "endCol": 52,
-              "raw": "\"transparent\""
+              "raw": "2"
             }
           }
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:119": {
+    "ResultsScreen@app/results.tsx:131": {
       "element": {
-        "file": "components/flight-card.tsx",
-        "line": 119
+        "file": "app/results.tsx",
+        "line": 131
       },
       "styles": [
         {
           "origin": "inline",
-          "file": "components/flight-card.tsx",
+          "file": "app/results.tsx",
           "properties": {
-            "fontSize": {
-              "line": 122,
+            "paddingHorizontal": {
+              "line": 134,
+              "col": 33,
+              "endCol": 35,
+              "raw": "10"
+            },
+            "paddingVertical": {
+              "line": 135,
+              "col": 31,
+              "endCol": 32,
+              "raw": "4"
+            },
+            "borderRadius": {
+              "line": 136,
               "col": 28,
               "endCol": 30,
-              "raw": "11"
+              "raw": "12"
             }
           }
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:129": {
+    "ResultsScreen@app/results.tsx:139": {
       "element": {
-        "file": "components/flight-card.tsx",
-        "line": 129
+        "file": "app/results.tsx",
+        "line": 139
       },
       "styles": [
         {
           "origin": "inline",
-          "file": "components/flight-card.tsx",
+          "file": "app/results.tsx",
           "properties": {
             "fontSize": {
-              "line": 132,
+              "line": 142,
               "col": 26,
               "endCol": 28,
-              "raw": "16"
+              "raw": "12"
             }
           }
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:143": {
+    "ResultsScreen@app/results.tsx:152": {
       "element": {
-        "file": "components/flight-card.tsx",
-        "line": 143
+        "file": "app/results.tsx",
+        "line": 152
       },
       "styles": [
         {
           "origin": "inline",
-          "file": "components/flight-card.tsx",
+          "file": "app/results.tsx",
           "properties": {
-            "alignItems": {
-              "line": 143,
-              "col": 35,
-              "endCol": 45,
-              "raw": "\"flex-end\""
-            },
-            "marginLeft": {
-              "line": 143,
-              "col": 59,
-              "endCol": 61,
-              "raw": "12"
+            "flexDirection": {
+              "line": 155,
+              "col": 27,
+              "endCol": 32,
+              "raw": "\"row\""
             },
             "gap": {
-              "line": 143,
-              "col": 68,
-              "endCol": 69,
-              "raw": "8"
+              "line": 156,
+              "col": 17,
+              "endCol": 19,
+              "raw": "10"
             }
           }
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:144": {
+    "ResultsScreen@app/results.tsx:159": {
       "element": {
-        "file": "components/flight-card.tsx",
-        "line": 144
+        "file": "app/results.tsx",
+        "line": 159
       },
       "styles": [
         {
           "origin": "inline",
-          "file": "components/flight-card.tsx",
+          "file": "app/results.tsx",
           "properties": {
-            "alignItems": {
-              "line": 144,
-              "col": 37,
-              "endCol": 47,
-              "raw": "\"flex-end\""
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:145": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 145
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 148,
-              "col": 26,
-              "endCol": 28,
-              "raw": "11"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:154": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 154
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 157,
-              "col": 26,
-              "endCol": 28,
-              "raw": "20"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:165": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 165
-      },
-      "styles": [
-        {
-          "origin": "dynamic",
-          "resolvable": false
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:176": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 176
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 179,
-              "col": 26,
-              "endCol": 28,
-              "raw": "12"
+            "paddingHorizontal": {
+              "line": 162,
+              "col": 33,
+              "endCol": 35,
+              "raw": "16"
             },
-            "color": {
-              "line": 180,
-              "col": 23,
+            "paddingVertical": {
+              "line": 163,
+              "col": 31,
               "endCol": 32,
-              "raw": "\"#FFFFFF\""
+              "raw": "8"
+            },
+            "borderRadius": {
+              "line": 164,
+              "col": 28,
+              "endCol": 30,
+              "raw": "20"
+            },
+            "borderCurve": {
+              "line": 167,
+              "col": 27,
+              "endCol": 39,
+              "raw": "\"continuous\""
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:170": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 170
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 173,
+              "col": 26,
+              "endCol": 28,
+              "raw": "13"
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:181": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 181
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "paddingHorizontal": {
+              "line": 184,
+              "col": 33,
+              "endCol": 35,
+              "raw": "16"
+            },
+            "paddingVertical": {
+              "line": 185,
+              "col": 31,
+              "endCol": 32,
+              "raw": "8"
+            },
+            "borderRadius": {
+              "line": 186,
+              "col": 28,
+              "endCol": 30,
+              "raw": "20"
+            },
+            "borderCurve": {
+              "line": 189,
+              "col": 27,
+              "endCol": 39,
+              "raw": "\"continuous\""
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:192": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 192
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 195,
+              "col": 26,
+              "endCol": 28,
+              "raw": "13"
             }
           }
         }
@@ -3893,6 +2925,974 @@
               "col": 16,
               "endCol": 21,
               "raw": "'500'"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:14": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 14
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "borderRadius": {
+              "line": 18,
+              "col": 22,
+              "endCol": 24,
+              "raw": "16"
+            },
+            "padding": {
+              "line": 19,
+              "col": 17,
+              "endCol": 19,
+              "raw": "16"
+            },
+            "boxShadow": {
+              "line": 20,
+              "col": 19,
+              "endCol": 48,
+              "raw": "\"0 4px 20px rgba(0,0,0,0.08)\""
+            },
+            "borderCurve": {
+              "line": 21,
+              "col": 21,
+              "endCol": 33,
+              "raw": "\"continuous\""
+            },
+            "borderWidth": {
+              "line": 22,
+              "col": 21,
+              "endCol": 22,
+              "raw": "1"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:27": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 27
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "position": {
+              "line": 29,
+              "col": 20,
+              "endCol": 30,
+              "raw": "\"absolute\""
+            },
+            "top": {
+              "line": 30,
+              "col": 15,
+              "endCol": 17,
+              "raw": "10"
+            },
+            "right": {
+              "line": 31,
+              "col": 17,
+              "endCol": 19,
+              "raw": "10"
+            },
+            "paddingHorizontal": {
+              "line": 33,
+              "col": 29,
+              "endCol": 30,
+              "raw": "8"
+            },
+            "paddingVertical": {
+              "line": 34,
+              "col": 27,
+              "endCol": 28,
+              "raw": "3"
+            },
+            "borderRadius": {
+              "line": 35,
+              "col": 24,
+              "endCol": 25,
+              "raw": "4"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:38": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 38
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 41,
+              "col": 22,
+              "endCol": 24,
+              "raw": "10"
+            },
+            "letterSpacing": {
+              "line": 43,
+              "col": 27,
+              "endCol": 30,
+              "raw": "0.3"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:50": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 50
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "flexDirection": {
+              "line": 50,
+              "col": 36,
+              "endCol": 41,
+              "raw": "\"row\""
+            },
+            "alignItems": {
+              "line": 50,
+              "col": 55,
+              "endCol": 63,
+              "raw": "\"center\""
+            },
+            "gap": {
+              "line": 50,
+              "col": 70,
+              "endCol": 72,
+              "raw": "14"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:52": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 52
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "width": {
+              "line": 54,
+              "col": 19,
+              "endCol": 21,
+              "raw": "64"
+            },
+            "height": {
+              "line": 55,
+              "col": 20,
+              "endCol": 22,
+              "raw": "64"
+            },
+            "borderRadius": {
+              "line": 56,
+              "col": 26,
+              "endCol": 28,
+              "raw": "12"
+            },
+            "alignItems": {
+              "line": 58,
+              "col": 24,
+              "endCol": 32,
+              "raw": "\"center\""
+            },
+            "justifyContent": {
+              "line": 59,
+              "col": 28,
+              "endCol": 36,
+              "raw": "\"center\""
+            },
+            "borderCurve": {
+              "line": 60,
+              "col": 25,
+              "endCol": 37,
+              "raw": "\"continuous\""
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:63": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 63
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "width": {
+              "line": 67,
+              "col": 28,
+              "endCol": 30,
+              "raw": "40"
+            },
+            "height": {
+              "line": 67,
+              "col": 40,
+              "endCol": 42,
+              "raw": "40"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:73": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 73
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "flex": {
+              "line": 73,
+              "col": 29,
+              "endCol": 30,
+              "raw": "1"
+            },
+            "gap": {
+              "line": 73,
+              "col": 37,
+              "endCol": 38,
+              "raw": "4"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:74": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 74
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 77,
+              "col": 24,
+              "endCol": 26,
+              "raw": "14"
+            },
+            "lineHeight": {
+              "line": 79,
+              "col": 26,
+              "endCol": 28,
+              "raw": "20"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:84": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 84
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 87,
+              "col": 24,
+              "endCol": 26,
+              "raw": "12"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:96": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 96
+      },
+      "styles": [
+        {
+          "origin": "dynamic",
+          "resolvable": false
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:108": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 108
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 111,
+              "col": 24,
+              "endCol": 26,
+              "raw": "11"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:20": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 20
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "borderRadius": {
+              "line": 24,
+              "col": 22,
+              "endCol": 24,
+              "raw": "16"
+            },
+            "padding": {
+              "line": 25,
+              "col": 17,
+              "endCol": 19,
+              "raw": "16"
+            },
+            "boxShadow": {
+              "line": 26,
+              "col": 19,
+              "endCol": 48,
+              "raw": "\"0 4px 20px rgba(0,0,0,0.08)\""
+            },
+            "borderCurve": {
+              "line": 27,
+              "col": 21,
+              "endCol": 33,
+              "raw": "\"continuous\""
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:30": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 30
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "flexDirection": {
+              "line": 32,
+              "col": 25,
+              "endCol": 30,
+              "raw": "\"row\""
+            },
+            "alignItems": {
+              "line": 33,
+              "col": 22,
+              "endCol": 30,
+              "raw": "\"center\""
+            },
+            "justifyContent": {
+              "line": 34,
+              "col": 26,
+              "endCol": 41,
+              "raw": "\"space-between\""
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:38": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 38
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "flex": {
+              "line": 38,
+              "col": 29,
+              "endCol": 30,
+              "raw": "1"
+            },
+            "gap": {
+              "line": 38,
+              "col": 37,
+              "endCol": 39,
+              "raw": "10"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:40": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 40
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "flexDirection": {
+              "line": 40,
+              "col": 40,
+              "endCol": 45,
+              "raw": "\"row\""
+            },
+            "alignItems": {
+              "line": 40,
+              "col": 59,
+              "endCol": 67,
+              "raw": "\"center\""
+            },
+            "gap": {
+              "line": 40,
+              "col": 74,
+              "endCol": 75,
+              "raw": "8"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:41": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 41
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "width": {
+              "line": 43,
+              "col": 23,
+              "endCol": 25,
+              "raw": "32"
+            },
+            "height": {
+              "line": 44,
+              "col": 24,
+              "endCol": 26,
+              "raw": "32"
+            },
+            "borderRadius": {
+              "line": 45,
+              "col": 30,
+              "endCol": 31,
+              "raw": "8"
+            },
+            "alignItems": {
+              "line": 47,
+              "col": 28,
+              "endCol": 36,
+              "raw": "\"center\""
+            },
+            "justifyContent": {
+              "line": 48,
+              "col": 32,
+              "endCol": 40,
+              "raw": "\"center\""
+            },
+            "overflow": {
+              "line": 49,
+              "col": 26,
+              "endCol": 34,
+              "raw": "\"hidden\""
+            },
+            "borderCurve": {
+              "line": 50,
+              "col": 29,
+              "endCol": 41,
+              "raw": "\"continuous\""
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:53": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 53
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "width": {
+              "line": 55,
+              "col": 32,
+              "endCol": 34,
+              "raw": "24"
+            },
+            "height": {
+              "line": 55,
+              "col": 44,
+              "endCol": 46,
+              "raw": "24"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:59": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 59
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 62,
+              "col": 26,
+              "endCol": 28,
+              "raw": "12"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:71": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 71
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "flexDirection": {
+              "line": 71,
+              "col": 40,
+              "endCol": 45,
+              "raw": "\"row\""
+            },
+            "alignItems": {
+              "line": 71,
+              "col": 59,
+              "endCol": 67,
+              "raw": "\"center\""
+            },
+            "gap": {
+              "line": 71,
+              "col": 74,
+              "endCol": 75,
+              "raw": "8"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:72": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 72
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 75,
+              "col": 26,
+              "endCol": 28,
+              "raw": "16"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:82": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 82
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "flex": {
+              "line": 82,
+              "col": 33,
+              "endCol": 34,
+              "raw": "1"
+            },
+            "alignItems": {
+              "line": 82,
+              "col": 48,
+              "endCol": 56,
+              "raw": "\"center\""
+            },
+            "gap": {
+              "line": 82,
+              "col": 63,
+              "endCol": 64,
+              "raw": "4"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:83": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 83
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "flexDirection": {
+              "line": 85,
+              "col": 33,
+              "endCol": 38,
+              "raw": "\"row\""
+            },
+            "alignItems": {
+              "line": 86,
+              "col": 30,
+              "endCol": 38,
+              "raw": "\"center\""
+            },
+            "width": {
+              "line": 87,
+              "col": 25,
+              "endCol": 31,
+              "raw": "\"100%\""
+            },
+            "paddingHorizontal": {
+              "line": 88,
+              "col": 37,
+              "endCol": 38,
+              "raw": "4"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:91": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 91
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "width": {
+              "line": 93,
+              "col": 27,
+              "endCol": 28,
+              "raw": "6"
+            },
+            "height": {
+              "line": 94,
+              "col": 28,
+              "endCol": 29,
+              "raw": "6"
+            },
+            "borderRadius": {
+              "line": 95,
+              "col": 34,
+              "endCol": 35,
+              "raw": "3"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:99": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 99
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "flex": {
+              "line": 101,
+              "col": 26,
+              "endCol": 27,
+              "raw": "1"
+            },
+            "height": {
+              "line": 102,
+              "col": 28,
+              "endCol": 31,
+              "raw": "1.5"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:106": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 106
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "width": {
+              "line": 108,
+              "col": 27,
+              "endCol": 28,
+              "raw": "0"
+            },
+            "height": {
+              "line": 109,
+              "col": 28,
+              "endCol": 29,
+              "raw": "0"
+            },
+            "borderLeftWidth": {
+              "line": 110,
+              "col": 37,
+              "endCol": 38,
+              "raw": "6"
+            },
+            "borderTopWidth": {
+              "line": 111,
+              "col": 36,
+              "endCol": 37,
+              "raw": "4"
+            },
+            "borderBottomWidth": {
+              "line": 112,
+              "col": 39,
+              "endCol": 40,
+              "raw": "4"
+            },
+            "borderTopColor": {
+              "line": 114,
+              "col": 36,
+              "endCol": 49,
+              "raw": "\"transparent\""
+            },
+            "borderBottomColor": {
+              "line": 115,
+              "col": 39,
+              "endCol": 52,
+              "raw": "\"transparent\""
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:119": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 119
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 122,
+              "col": 28,
+              "endCol": 30,
+              "raw": "11"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:129": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 129
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 132,
+              "col": 26,
+              "endCol": 28,
+              "raw": "16"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:143": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 143
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "alignItems": {
+              "line": 143,
+              "col": 35,
+              "endCol": 45,
+              "raw": "\"flex-end\""
+            },
+            "marginLeft": {
+              "line": 143,
+              "col": 59,
+              "endCol": 61,
+              "raw": "12"
+            },
+            "gap": {
+              "line": 143,
+              "col": 68,
+              "endCol": 69,
+              "raw": "8"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:144": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 144
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "alignItems": {
+              "line": 144,
+              "col": 37,
+              "endCol": 47,
+              "raw": "\"flex-end\""
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:145": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 145
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 148,
+              "col": 26,
+              "endCol": 28,
+              "raw": "11"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:154": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 154
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 157,
+              "col": 26,
+              "endCol": 28,
+              "raw": "20"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:165": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 165
+      },
+      "styles": [
+        {
+          "origin": "dynamic",
+          "resolvable": false
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:176": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 176
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 179,
+              "col": 26,
+              "endCol": 28,
+              "raw": "12"
+            },
+            "color": {
+              "line": 180,
+              "col": 23,
+              "endCol": 32,
+              "raw": "\"#FFFFFF\""
             }
           }
         }
