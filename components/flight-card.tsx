@@ -6,6 +6,14 @@ import { Fonts } from "@/constants/Typography";
 import { Flight } from "@/constants/FlightData";
 import Animated, { FadeInDown } from "react-native-reanimated";
 
+const airlinePlaceholder = require("@/assets/images/airline-placeholder.png");
+
+function getAirlineLogoSource(url: string | undefined) {
+  if (!url) return airlinePlaceholder;
+  if (url.startsWith("//")) return { uri: `https:${url}` };
+  return { uri: url };
+}
+
 interface FlightCardProps {
   flight: Flight;
   index: number;
@@ -51,7 +59,8 @@ export function FlightCard({ flight, index }: FlightCardProps) {
               }}
             >
               <Image
-                source={{ uri: flight.airline_logo }}
+                source={getAirlineLogoSource(flight.airline_logo)}
+                placeholder={airlinePlaceholder}
                 style={{ width: 24, height: 24 }}
                 contentFit="contain"
               />

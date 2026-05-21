@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1779338196053,
+  "generatedAt": 1779339364466,
   "entries": {
     "RootLayout@app/_layout.tsx:31": {
       "element": {
@@ -3262,10 +3262,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:20": {
+    "FlightCard@components/flight-card.tsx:28": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 20
+        "line": 28
       },
       "styles": [
         {
@@ -3273,60 +3273,28 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "borderRadius": {
-              "line": 24,
+              "line": 32,
               "col": 22,
               "endCol": 24,
               "raw": "16"
             },
             "padding": {
-              "line": 25,
+              "line": 33,
               "col": 17,
               "endCol": 19,
               "raw": "16"
             },
             "boxShadow": {
-              "line": 26,
+              "line": 34,
               "col": 19,
               "endCol": 48,
               "raw": "\"0 4px 20px rgba(0,0,0,0.08)\""
             },
             "borderCurve": {
-              "line": 27,
+              "line": 35,
               "col": 21,
               "endCol": 33,
               "raw": "\"continuous\""
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:30": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 30
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "flexDirection": {
-              "line": 32,
-              "col": 25,
-              "endCol": 30,
-              "raw": "\"row\""
-            },
-            "alignItems": {
-              "line": 33,
-              "col": 22,
-              "endCol": 30,
-              "raw": "\"center\""
-            },
-            "justifyContent": {
-              "line": 34,
-              "col": 26,
-              "endCol": 41,
-              "raw": "\"space-between\""
             }
           }
         }
@@ -3342,14 +3310,46 @@
           "origin": "inline",
           "file": "components/flight-card.tsx",
           "properties": {
+            "flexDirection": {
+              "line": 40,
+              "col": 25,
+              "endCol": 30,
+              "raw": "\"row\""
+            },
+            "alignItems": {
+              "line": 41,
+              "col": 22,
+              "endCol": 30,
+              "raw": "\"center\""
+            },
+            "justifyContent": {
+              "line": 42,
+              "col": 26,
+              "endCol": 41,
+              "raw": "\"space-between\""
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:46": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 46
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
             "flex": {
-              "line": 38,
+              "line": 46,
               "col": 29,
               "endCol": 30,
               "raw": "1"
             },
             "gap": {
-              "line": 38,
+              "line": 46,
               "col": 37,
               "endCol": 39,
               "raw": "10"
@@ -3358,10 +3358,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:40": {
+    "FlightCard@components/flight-card.tsx:48": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 40
+        "line": 48
       },
       "styles": [
         {
@@ -3369,19 +3369,19 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "flexDirection": {
-              "line": 40,
+              "line": 48,
               "col": 40,
               "endCol": 45,
               "raw": "\"row\""
             },
             "alignItems": {
-              "line": 40,
+              "line": 48,
               "col": 59,
               "endCol": 67,
               "raw": "\"center\""
             },
             "gap": {
-              "line": 40,
+              "line": 48,
               "col": 74,
               "endCol": 75,
               "raw": "8"
@@ -3390,10 +3390,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:41": {
+    "FlightCard@components/flight-card.tsx:49": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 41
+        "line": 49
       },
       "styles": [
         {
@@ -3401,43 +3401,43 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "width": {
-              "line": 43,
+              "line": 51,
               "col": 23,
               "endCol": 25,
               "raw": "32"
             },
             "height": {
-              "line": 44,
+              "line": 52,
               "col": 24,
               "endCol": 26,
               "raw": "32"
             },
             "borderRadius": {
-              "line": 45,
+              "line": 53,
               "col": 30,
               "endCol": 31,
               "raw": "8"
             },
             "alignItems": {
-              "line": 47,
+              "line": 55,
               "col": 28,
               "endCol": 36,
               "raw": "\"center\""
             },
             "justifyContent": {
-              "line": 48,
+              "line": 56,
               "col": 32,
               "endCol": 40,
               "raw": "\"center\""
             },
             "overflow": {
-              "line": 49,
+              "line": 57,
               "col": 26,
               "endCol": 34,
               "raw": "\"hidden\""
             },
             "borderCurve": {
-              "line": 50,
+              "line": 58,
               "col": 29,
               "endCol": 41,
               "raw": "\"continuous\""
@@ -3446,10 +3446,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:53": {
+    "FlightCard@components/flight-card.tsx:61": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 53
+        "line": 61
       },
       "styles": [
         {
@@ -3457,13 +3457,13 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "width": {
-              "line": 55,
+              "line": 64,
               "col": 32,
               "endCol": 34,
               "raw": "24"
             },
             "height": {
-              "line": 55,
+              "line": 64,
               "col": 44,
               "endCol": 46,
               "raw": "24"
@@ -3472,10 +3472,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:59": {
+    "FlightCard@components/flight-card.tsx:68": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 59
+        "line": 68
       },
       "styles": [
         {
@@ -3483,7 +3483,7 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "fontSize": {
-              "line": 62,
+              "line": 71,
               "col": 26,
               "endCol": 28,
               "raw": "12"
@@ -3492,10 +3492,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:71": {
+    "FlightCard@components/flight-card.tsx:80": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 71
+        "line": 80
       },
       "styles": [
         {
@@ -3503,19 +3503,19 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "flexDirection": {
-              "line": 71,
+              "line": 80,
               "col": 40,
               "endCol": 45,
               "raw": "\"row\""
             },
             "alignItems": {
-              "line": 71,
+              "line": 80,
               "col": 59,
               "endCol": 67,
               "raw": "\"center\""
             },
             "gap": {
-              "line": 71,
+              "line": 80,
               "col": 74,
               "endCol": 75,
               "raw": "8"
@@ -3524,10 +3524,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:72": {
+    "FlightCard@components/flight-card.tsx:81": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 72
+        "line": 81
       },
       "styles": [
         {
@@ -3535,80 +3535,10 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "fontSize": {
-              "line": 75,
+              "line": 84,
               "col": 26,
               "endCol": 28,
               "raw": "16"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:82": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 82
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "flex": {
-              "line": 82,
-              "col": 33,
-              "endCol": 34,
-              "raw": "1"
-            },
-            "alignItems": {
-              "line": 82,
-              "col": 48,
-              "endCol": 56,
-              "raw": "\"center\""
-            },
-            "gap": {
-              "line": 82,
-              "col": 63,
-              "endCol": 64,
-              "raw": "4"
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:83": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 83
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "flexDirection": {
-              "line": 85,
-              "col": 33,
-              "endCol": 38,
-              "raw": "\"row\""
-            },
-            "alignItems": {
-              "line": 86,
-              "col": 30,
-              "endCol": 38,
-              "raw": "\"center\""
-            },
-            "width": {
-              "line": 87,
-              "col": 25,
-              "endCol": 31,
-              "raw": "\"100%\""
-            },
-            "paddingHorizontal": {
-              "line": 88,
-              "col": 37,
-              "endCol": 38,
-              "raw": "4"
             }
           }
         }
@@ -3624,20 +3554,90 @@
           "origin": "inline",
           "file": "components/flight-card.tsx",
           "properties": {
+            "flex": {
+              "line": 91,
+              "col": 33,
+              "endCol": 34,
+              "raw": "1"
+            },
+            "alignItems": {
+              "line": 91,
+              "col": 48,
+              "endCol": 56,
+              "raw": "\"center\""
+            },
+            "gap": {
+              "line": 91,
+              "col": 63,
+              "endCol": 64,
+              "raw": "4"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:92": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 92
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "flexDirection": {
+              "line": 94,
+              "col": 33,
+              "endCol": 38,
+              "raw": "\"row\""
+            },
+            "alignItems": {
+              "line": 95,
+              "col": 30,
+              "endCol": 38,
+              "raw": "\"center\""
+            },
             "width": {
-              "line": 93,
+              "line": 96,
+              "col": 25,
+              "endCol": 31,
+              "raw": "\"100%\""
+            },
+            "paddingHorizontal": {
+              "line": 97,
+              "col": 37,
+              "endCol": 38,
+              "raw": "4"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:100": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 100
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "width": {
+              "line": 102,
               "col": 27,
               "endCol": 28,
               "raw": "6"
             },
             "height": {
-              "line": 94,
+              "line": 103,
               "col": 28,
               "endCol": 29,
               "raw": "6"
             },
             "borderRadius": {
-              "line": 95,
+              "line": 104,
               "col": 34,
               "endCol": 35,
               "raw": "3"
@@ -3646,10 +3646,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:99": {
+    "FlightCard@components/flight-card.tsx:108": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 99
+        "line": 108
       },
       "styles": [
         {
@@ -3657,13 +3657,13 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "flex": {
-              "line": 101,
+              "line": 110,
               "col": 26,
               "endCol": 27,
               "raw": "1"
             },
             "height": {
-              "line": 102,
+              "line": 111,
               "col": 28,
               "endCol": 31,
               "raw": "1.5"
@@ -3672,10 +3672,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:106": {
+    "FlightCard@components/flight-card.tsx:115": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 106
+        "line": 115
       },
       "styles": [
         {
@@ -3683,43 +3683,43 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "width": {
-              "line": 108,
+              "line": 117,
               "col": 27,
               "endCol": 28,
               "raw": "0"
             },
             "height": {
-              "line": 109,
+              "line": 118,
               "col": 28,
               "endCol": 29,
               "raw": "0"
             },
             "borderLeftWidth": {
-              "line": 110,
+              "line": 119,
               "col": 37,
               "endCol": 38,
               "raw": "6"
             },
             "borderTopWidth": {
-              "line": 111,
+              "line": 120,
               "col": 36,
               "endCol": 37,
               "raw": "4"
             },
             "borderBottomWidth": {
-              "line": 112,
+              "line": 121,
               "col": 39,
               "endCol": 40,
               "raw": "4"
             },
             "borderTopColor": {
-              "line": 114,
+              "line": 123,
               "col": 36,
               "endCol": 49,
               "raw": "\"transparent\""
             },
             "borderBottomColor": {
-              "line": 115,
+              "line": 124,
               "col": 39,
               "endCol": 52,
               "raw": "\"transparent\""
@@ -3728,10 +3728,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:119": {
+    "FlightCard@components/flight-card.tsx:128": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 119
+        "line": 128
       },
       "styles": [
         {
@@ -3739,7 +3739,7 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "fontSize": {
-              "line": 122,
+              "line": 131,
               "col": 28,
               "endCol": 30,
               "raw": "11"
@@ -3748,10 +3748,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:129": {
+    "FlightCard@components/flight-card.tsx:138": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 129
+        "line": 138
       },
       "styles": [
         {
@@ -3759,7 +3759,7 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "fontSize": {
-              "line": 132,
+              "line": 141,
               "col": 26,
               "endCol": 28,
               "raw": "16"
@@ -3768,10 +3768,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:143": {
+    "FlightCard@components/flight-card.tsx:152": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 143
+        "line": 152
       },
       "styles": [
         {
@@ -3779,19 +3779,19 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "alignItems": {
-              "line": 143,
+              "line": 152,
               "col": 35,
               "endCol": 45,
               "raw": "\"flex-end\""
             },
             "marginLeft": {
-              "line": 143,
+              "line": 152,
               "col": 59,
               "endCol": 61,
               "raw": "12"
             },
             "gap": {
-              "line": 143,
+              "line": 152,
               "col": 68,
               "endCol": 69,
               "raw": "8"
@@ -3800,10 +3800,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:144": {
+    "FlightCard@components/flight-card.tsx:153": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 144
+        "line": 153
       },
       "styles": [
         {
@@ -3811,30 +3811,10 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "alignItems": {
-              "line": 144,
+              "line": 153,
               "col": 37,
               "endCol": 47,
               "raw": "\"flex-end\""
-            }
-          }
-        }
-      ]
-    },
-    "FlightCard@components/flight-card.tsx:145": {
-      "element": {
-        "file": "components/flight-card.tsx",
-        "line": 145
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/flight-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 148,
-              "col": 26,
-              "endCol": 28,
-              "raw": "11"
             }
           }
         }
@@ -3854,16 +3834,36 @@
               "line": 157,
               "col": 26,
               "endCol": 28,
+              "raw": "11"
+            }
+          }
+        }
+      ]
+    },
+    "FlightCard@components/flight-card.tsx:163": {
+      "element": {
+        "file": "components/flight-card.tsx",
+        "line": 163
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/flight-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 166,
+              "col": 26,
+              "endCol": 28,
               "raw": "20"
             }
           }
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:165": {
+    "FlightCard@components/flight-card.tsx:174": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 165
+        "line": 174
       },
       "styles": [
         {
@@ -3872,10 +3872,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:176": {
+    "FlightCard@components/flight-card.tsx:185": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 176
+        "line": 185
       },
       "styles": [
         {
@@ -3883,13 +3883,13 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "fontSize": {
-              "line": 179,
+              "line": 188,
               "col": 26,
               "endCol": 28,
               "raw": "12"
             },
             "color": {
-              "line": 180,
+              "line": 189,
               "col": 23,
               "endCol": 32,
               "raw": "\"#FFFFFF\""
