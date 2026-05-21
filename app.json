@@ -21,7 +21,13 @@
     "web": {
       "bundler": "metro",
       "output": "single",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "name": "TripVibe",
+      "shortName": "TripVibe",
+      "display": "standalone",
+      "orientation": "portrait",
+      "themeColor": "#FFFFFF",
+      "backgroundColor": "#F8F9FA"
     },
     "plugins": [
       "expo-router",
@@ -36,8 +42,7 @@
       ]
     ],
     "experiments": {
-      "typedRoutes": true,
-      "baseUrl": "/2310aea5-33b9-45f7-a7e5-788187b9c0d5/dev-preview/"
+      "typedRoutes": true
     }
   }
 }

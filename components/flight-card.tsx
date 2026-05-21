@@ -8,10 +8,18 @@ import Animated, { FadeInDown } from "react-native-reanimated";
 
 const airlinePlaceholder = require("@/assets/images/airline-placeholder.png");
 
-function getAirlineLogoSource(url: string | undefined) {
-  if (!url) return airlinePlaceholder;
-  if (url.startsWith("//")) return { uri: `https:${url}` };
-  return { uri: url };
+// Resolve airline logo: prefer Duffel CDN by IATA code, fall back to provided URL
+function getAirlineLogoSource(airlineCode?: string, airlineLogo?: string) {
+  if (airlineCode) {
+    return {
+      uri: `https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/${airlineCode}.svg`,
+    };
+  }
+  if (airlineLogo) {
+    if (airlineLogo.startsWith("//")) return { uri: `https:${airlineLogo}` };
+    return { uri: airlineLogo };
+  }
+  return airlinePlaceholder;
 }
 
 interface FlightCardProps {
@@ -48,8 +56,8 @@ export function FlightCard({ flight, index }: FlightCardProps) {
           <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
             <View
               style={{
-                width: 32,
-                height: 32,
+                width: 36,
+                height: 36,
                 borderRadius: 8,
                 backgroundColor: Colors.background,
                 alignItems: "center",
@@ -59,9 +67,10 @@ export function FlightCard({ flight, index }: FlightCardProps) {
               }}
             >
               <Image
-                source={getAirlineLogoSource(flight.airline_logo)}
+                source={getAirlineLogoSource(flight.airline_code, flight.airline_logo)}
                 placeholder={airlinePlaceholder}
-                style={{ width: 24, height: 24 }}
+                placeholderContentFit="contain"
+                style={{ width: 36, height: 36 }}
                 contentFit="contain"
               />
             </View>

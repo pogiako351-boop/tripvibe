@@ -1,6 +1,7 @@
 export interface Flight {
   id: string;
   airline_name: string;
+  airline_code?: string;
   airline_logo: string;
   price: number;
   duration: string;
@@ -15,6 +16,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-001",
     airline_name: "Philippine Airlines",
+    airline_code: "PR",
     airline_logo: "https://logo.clearbit.com/philippineairlines.com",
     price: 3499,
     duration: "1h 15m",
@@ -27,6 +29,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-002",
     airline_name: "Cebu Pacific",
+    airline_code: "5J",
     airline_logo: "https://logo.clearbit.com/cebupacificair.com",
     price: 2899,
     duration: "1h 20m",
@@ -39,6 +42,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-003",
     airline_name: "AirAsia Philippines",
+    airline_code: "Z2",
     airline_logo: "https://logo.clearbit.com/airasia.com",
     price: 3850,
     duration: "1h 15m",
@@ -51,6 +55,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-004",
     airline_name: "Philippine Airlines",
+    airline_code: "PR",
     airline_logo: "https://logo.clearbit.com/philippineairlines.com",
     price: 4200,
     duration: "1h 10m",
@@ -63,6 +68,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-005",
     airline_name: "Cebu Pacific",
+    airline_code: "5J",
     airline_logo: "https://logo.clearbit.com/cebupacificair.com",
     price: 2650,
     duration: "1h 25m",
@@ -75,6 +81,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-006",
     airline_name: "AirAsia Philippines",
+    airline_code: "Z2",
     airline_logo: "https://logo.clearbit.com/airasia.com",
     price: 3150,
     duration: "1h 20m",
@@ -87,6 +94,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-007",
     airline_name: "Philippine Airlines",
+    airline_code: "PR",
     airline_logo: "https://logo.clearbit.com/philippineairlines.com",
     price: 5100,
     duration: "1h 10m",
@@ -99,6 +107,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-008",
     airline_name: "Cebu Pacific",
+    airline_code: "5J",
     airline_logo: "https://logo.clearbit.com/cebupacificair.com",
     price: 3499,
     duration: "1h 30m",
@@ -111,6 +120,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-009",
     airline_name: "AirAsia Philippines",
+    airline_code: "Z2",
     airline_logo: "https://logo.clearbit.com/airasia.com",
     price: 2999,
     duration: "1h 15m",
@@ -123,6 +133,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-010",
     airline_name: "Philippine Airlines",
+    airline_code: "PR",
     airline_logo: "https://logo.clearbit.com/philippineairlines.com",
     price: 4750,
     duration: "1h 10m",
@@ -135,6 +146,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-011",
     airline_name: "Cebu Pacific",
+    airline_code: "5J",
     airline_logo: "https://logo.clearbit.com/cebupacificair.com",
     price: 2450,
     duration: "1h 35m",
@@ -147,6 +159,7 @@ export const MOCK_FLIGHTS: Flight[] = [
   {
     id: "fl-012",
     airline_name: "AirAsia Philippines",
+    airline_code: "Z2",
     airline_logo: "https://logo.clearbit.com/airasia.com",
     price: 3299,
     duration: "1h 20m",
