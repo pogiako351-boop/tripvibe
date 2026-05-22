@@ -1,5 +1,5 @@
-import React, { useMemo, useState } from "react";
-import { View, Text, Pressable, FlatList } from "react-native";
+import React, { useEffect, useMemo, useState } from "react";
+import { View, Text, Pressable, FlatList, ActivityIndicator } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
@@ -9,6 +9,7 @@ import { Fonts } from "@/constants/Typography";
 import { MOCK_FLIGHTS, Flight } from "@/constants/FlightData";
 import { FlightCard } from "@/components/flight-card";
 import { AdCard } from "@/components/ad-card";
+import { fetchFlights } from "@/lib/travelpayouts";
 
 type SortMode = "cheapest" | "fastest";
 
@@ -30,16 +31,65 @@ export default function ResultsScreen() {
   }>();
 
   const [sortMode, setSortMode] = useState<SortMode>("cheapest");
+  const [flights, setFlights] = useState<Flight[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [usedFallback, setUsedFallback] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadFlights() {
+      setIsLoading(true);
+      setError(null);
+      setUsedFallback(false);
+
+      try {
+        const origin = params.origin || "";
+        const destination = params.destination || "";
+        const date = params.date || "";
+
+        if (!origin || !destination || !date) {
+          throw new Error("Missing search parameters");
+        }
+
+        const results = await fetchFlights(origin, destination, date);
+
+        if (!cancelled) {
+          setFlights(results);
+        }
+      } catch (err: unknown) {
+        if (!cancelled) {
+          const message =
+            err instanceof Error ? err.message : "An unexpected error occurred";
+          setError(message);
+          // Fallback to mock data so UI never shows blank
+          setFlights(MOCK_FLIGHTS);
+          setUsedFallback(true);
+        }
+      } finally {
+        if (!cancelled) {
+          setIsLoading(false);
+        }
+      }
+    }
+
+    loadFlights();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [params.origin, params.destination, params.date]);
 
   const sortedFlights = useMemo(() => {
-    const flights = [...MOCK_FLIGHTS];
+    const sorted = [...flights];
     if (sortMode === "cheapest") {
-      flights.sort((a, b) => a.price - b.price);
+      sorted.sort((a, b) => a.price - b.price);
     } else {
-      flights.sort((a, b) => a.duration_minutes - b.duration_minutes);
+      sorted.sort((a, b) => a.duration_minutes - b.duration_minutes);
     }
-    return flights;
-  }, [sortMode]);
+    return sorted;
+  }, [flights, sortMode]);
 
   // Inject ads every 3 flight cards
   const listData = useMemo<ListItem[]>(() => {
@@ -128,24 +178,26 @@ export default function ResultsScreen() {
                 : ""}
             </Text>
           </View>
-          <View
-            style={{
-              backgroundColor: `${Colors.primary}10`,
-              paddingHorizontal: 10,
-              paddingVertical: 4,
-              borderRadius: 12,
-            }}
-          >
-            <Text
+          {!isLoading && (
+            <View
               style={{
-                fontFamily: Fonts.semiBold,
-                fontSize: 12,
-                color: Colors.primary,
+                backgroundColor: `${Colors.primary}10`,
+                paddingHorizontal: 10,
+                paddingVertical: 4,
+                borderRadius: 12,
               }}
             >
-              {MOCK_FLIGHTS.length} flights
-            </Text>
-          </View>
+              <Text
+                style={{
+                  fontFamily: Fonts.semiBold,
+                  fontSize: 12,
+                  color: Colors.primary,
+                }}
+              >
+                {flights.length} flights
+              </Text>
+            </View>
+          )}
         </Animated.View>
 
         {/* Sort pills */}
@@ -203,19 +255,108 @@ export default function ResultsScreen() {
         </Animated.View>
       </View>
 
+      {/* Loading State */}
+      {isLoading && (
+        <View
+          style={{
+            flex: 1,
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 16,
+            padding: 40,
+          }}
+        >
+          <ActivityIndicator size="large" color={Colors.primary} />
+          <Text
+            style={{
+              fontFamily: Fonts.medium,
+              fontSize: 15,
+              color: Colors.textSecondary,
+              textAlign: "center",
+            }}
+          >
+            Searching for the best deals...
+          </Text>
+          <Text
+            style={{
+              fontFamily: Fonts.regular,
+              fontSize: 13,
+              color: Colors.textMuted,
+              textAlign: "center",
+            }}
+          >
+            {params.originCity || params.origin} →{" "}
+            {params.destinationCity || params.destination}
+          </Text>
+        </View>
+      )}
+
+      {/* Error Banner (shown above results when using fallback) */}
+      {!isLoading && error && usedFallback && (
+        <Animated.View
+          entering={FadeInDown.duration(300)}
+          style={{
+            marginHorizontal: 16,
+            marginTop: 12,
+            backgroundColor: "#FEF3C7",
+            borderRadius: 12,
+            padding: 14,
+            flexDirection: "row",
+            alignItems: "center",
+            gap: 10,
+            borderCurve: "continuous",
+          }}
+        >
+          <Ionicons name="information-circle" size={20} color="#D97706" />
+          <View style={{ flex: 1 }}>
+            <Text
+              selectable
+              style={{
+                fontFamily: Fonts.medium,
+                fontSize: 13,
+                color: "#92400E",
+              }}
+            >
+              No flights found. Please try a different route or date.
+            </Text>
+            <Text
+              style={{
+                fontFamily: Fonts.regular,
+                fontSize: 11,
+                color: "#B45309",
+                marginTop: 2,
+              }}
+            >
+              Showing sample results below
+            </Text>
+          </View>
+          <Pressable
+            onPress={() => {
+              setError(null);
+              setUsedFallback(false);
+            }}
+            hitSlop={8}
+          >
+            <Ionicons name="close" size={18} color="#92400E" />
+          </Pressable>
+        </Animated.View>
+      )}
+
       {/* Flight list */}
-      <FlatList
-        data={listData}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.id}
-        contentContainerStyle={{
-          padding: 16,
-          paddingBottom: insets.bottom + 20,
-          gap: 12,
-        }}
-        showsVerticalScrollIndicator={false}
-        contentInsetAdjustmentBehavior="automatic"
-      />
+      {!isLoading && (
+        <FlatList
+          data={listData}
+          renderItem={renderItem}
+          keyExtractor={(item) => item.id}
+          contentContainerStyle={{
+            padding: 16,
+            paddingBottom: insets.bottom + 20,
+            gap: 12,
+          }}
+          showsVerticalScrollIndicator={false}
+          contentInsetAdjustmentBehavior="automatic"
+        />
+      )}
     </View>
   );
 }

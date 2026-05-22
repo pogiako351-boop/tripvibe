@@ -177,7 +177,8 @@ export function FlightCard({ flight, index }: FlightCardProps) {
               }}
               selectable
             >
-              ₱{flight.price.toLocaleString()}
+              {flight.currency === "USD" ? "$" : "₱"}
+              {flight.price.toLocaleString()}
             </Text>
           </View>
           <Pressable

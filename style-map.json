@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": 1779377342945,
+  "generatedAt": 1779466526106,
   "entries": {
     "RootLayout@app/_layout.tsx:31": {
       "element": {
@@ -22,10 +22,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:66": {
+    "ResultsScreen@app/results.tsx:116": {
       "element": {
         "file": "app/results.tsx",
-        "line": 66
+        "line": 116
       },
       "styles": [
         {
@@ -33,7 +33,7 @@
           "file": "app/results.tsx",
           "properties": {
             "flex": {
-              "line": 66,
+              "line": 116,
               "col": 25,
               "endCol": 26,
               "raw": "1"
@@ -42,10 +42,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:68": {
+    "ResultsScreen@app/results.tsx:118": {
       "element": {
         "file": "app/results.tsx",
-        "line": 68
+        "line": 118
       },
       "styles": [
         {
@@ -53,19 +53,19 @@
           "file": "app/results.tsx",
           "properties": {
             "paddingHorizontal": {
-              "line": 71,
+              "line": 121,
               "col": 29,
               "endCol": 31,
               "raw": "20"
             },
             "paddingBottom": {
-              "line": 72,
+              "line": 122,
               "col": 25,
               "endCol": 27,
               "raw": "12"
             },
             "boxShadow": {
-              "line": 74,
+              "line": 124,
               "col": 21,
               "endCol": 50,
               "raw": "\"0 2px 12px rgba(0,0,0,0.06)\""
@@ -74,10 +74,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:77": {
+    "ResultsScreen@app/results.tsx:127": {
       "element": {
         "file": "app/results.tsx",
-        "line": 77
+        "line": 127
       },
       "styles": [
         {
@@ -85,25 +85,25 @@
           "file": "app/results.tsx",
           "properties": {
             "flexDirection": {
-              "line": 80,
+              "line": 130,
               "col": 27,
               "endCol": 32,
               "raw": "\"row\""
             },
             "alignItems": {
-              "line": 81,
+              "line": 131,
               "col": 24,
               "endCol": 32,
               "raw": "\"center\""
             },
             "gap": {
-              "line": 82,
+              "line": 132,
               "col": 17,
               "endCol": 19,
               "raw": "12"
             },
             "marginBottom": {
-              "line": 83,
+              "line": 133,
               "col": 26,
               "endCol": 28,
               "raw": "14"
@@ -112,10 +112,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:86": {
+    "ResultsScreen@app/results.tsx:136": {
       "element": {
         "file": "app/results.tsx",
-        "line": 86
+        "line": 136
       },
       "styles": [
         {
@@ -123,31 +123,31 @@
           "file": "app/results.tsx",
           "properties": {
             "width": {
-              "line": 89,
+              "line": 139,
               "col": 21,
               "endCol": 23,
               "raw": "36"
             },
             "height": {
-              "line": 90,
+              "line": 140,
               "col": 22,
               "endCol": 24,
               "raw": "36"
             },
             "borderRadius": {
-              "line": 91,
+              "line": 141,
               "col": 28,
               "endCol": 30,
               "raw": "18"
             },
             "alignItems": {
-              "line": 93,
+              "line": 143,
               "col": 26,
               "endCol": 34,
               "raw": "\"center\""
             },
             "justifyContent": {
-              "line": 94,
+              "line": 144,
               "col": 30,
               "endCol": 38,
               "raw": "\"center\""
@@ -156,10 +156,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:99": {
+    "ResultsScreen@app/results.tsx:149": {
       "element": {
         "file": "app/results.tsx",
-        "line": 99
+        "line": 149
       },
       "styles": [
         {
@@ -167,7 +167,7 @@
           "file": "app/results.tsx",
           "properties": {
             "flex": {
-              "line": 99,
+              "line": 149,
               "col": 31,
               "endCol": 32,
               "raw": "1"
@@ -176,10 +176,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:100": {
+    "ResultsScreen@app/results.tsx:150": {
       "element": {
         "file": "app/results.tsx",
-        "line": 100
+        "line": 150
       },
       "styles": [
         {
@@ -187,7 +187,7 @@
           "file": "app/results.tsx",
           "properties": {
             "fontSize": {
-              "line": 103,
+              "line": 153,
               "col": 26,
               "endCol": 28,
               "raw": "17"
@@ -196,10 +196,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:110": {
+    "ResultsScreen@app/results.tsx:160": {
       "element": {
         "file": "app/results.tsx",
-        "line": 110
+        "line": 160
       },
       "styles": [
         {
@@ -207,13 +207,13 @@
           "file": "app/results.tsx",
           "properties": {
             "fontSize": {
-              "line": 113,
+              "line": 163,
               "col": 26,
               "endCol": 28,
               "raw": "13"
             },
             "marginTop": {
-              "line": 115,
+              "line": 165,
               "col": 27,
               "endCol": 28,
               "raw": "2"
@@ -222,10 +222,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:131": {
+    "ResultsScreen@app/results.tsx:182": {
       "element": {
         "file": "app/results.tsx",
-        "line": 131
+        "line": 182
       },
       "styles": [
         {
@@ -233,19 +233,39 @@
           "file": "app/results.tsx",
           "properties": {
             "paddingHorizontal": {
-              "line": 134,
-              "col": 33,
-              "endCol": 35,
+              "line": 185,
+              "col": 35,
+              "endCol": 37,
               "raw": "10"
             },
             "paddingVertical": {
-              "line": 135,
-              "col": 31,
-              "endCol": 32,
+              "line": 186,
+              "col": 33,
+              "endCol": 34,
               "raw": "4"
             },
             "borderRadius": {
-              "line": 136,
+              "line": 187,
+              "col": 30,
+              "endCol": 32,
+              "raw": "12"
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:190": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 190
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 193,
               "col": 28,
               "endCol": 30,
               "raw": "12"
@@ -254,30 +274,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:139": {
+    "ResultsScreen@app/results.tsx:204": {
       "element": {
         "file": "app/results.tsx",
-        "line": 139
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "app/results.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 142,
-              "col": 26,
-              "endCol": 28,
-              "raw": "12"
-            }
-          }
-        }
-      ]
-    },
-    "ResultsScreen@app/results.tsx:152": {
-      "element": {
-        "file": "app/results.tsx",
-        "line": 152
+        "line": 204
       },
       "styles": [
         {
@@ -285,13 +285,13 @@
           "file": "app/results.tsx",
           "properties": {
             "flexDirection": {
-              "line": 155,
+              "line": 207,
               "col": 27,
               "endCol": 32,
               "raw": "\"row\""
             },
             "gap": {
-              "line": 156,
+              "line": 208,
               "col": 17,
               "endCol": 19,
               "raw": "10"
@@ -300,10 +300,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:159": {
+    "ResultsScreen@app/results.tsx:211": {
       "element": {
         "file": "app/results.tsx",
-        "line": 159
+        "line": 211
       },
       "styles": [
         {
@@ -311,25 +311,25 @@
           "file": "app/results.tsx",
           "properties": {
             "paddingHorizontal": {
-              "line": 162,
+              "line": 214,
               "col": 33,
               "endCol": 35,
               "raw": "16"
             },
             "paddingVertical": {
-              "line": 163,
+              "line": 215,
               "col": 31,
               "endCol": 32,
               "raw": "8"
             },
             "borderRadius": {
-              "line": 164,
+              "line": 216,
               "col": 28,
               "endCol": 30,
               "raw": "20"
             },
             "borderCurve": {
-              "line": 167,
+              "line": 219,
               "col": 27,
               "endCol": 39,
               "raw": "\"continuous\""
@@ -338,10 +338,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:170": {
+    "ResultsScreen@app/results.tsx:222": {
       "element": {
         "file": "app/results.tsx",
-        "line": 170
+        "line": 222
       },
       "styles": [
         {
@@ -349,7 +349,7 @@
           "file": "app/results.tsx",
           "properties": {
             "fontSize": {
-              "line": 173,
+              "line": 225,
               "col": 26,
               "endCol": 28,
               "raw": "13"
@@ -358,10 +358,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:181": {
+    "ResultsScreen@app/results.tsx:233": {
       "element": {
         "file": "app/results.tsx",
-        "line": 181
+        "line": 233
       },
       "styles": [
         {
@@ -369,25 +369,25 @@
           "file": "app/results.tsx",
           "properties": {
             "paddingHorizontal": {
-              "line": 184,
+              "line": 236,
               "col": 33,
               "endCol": 35,
               "raw": "16"
             },
             "paddingVertical": {
-              "line": 185,
+              "line": 237,
               "col": 31,
               "endCol": 32,
               "raw": "8"
             },
             "borderRadius": {
-              "line": 186,
+              "line": 238,
               "col": 28,
               "endCol": 30,
               "raw": "20"
             },
             "borderCurve": {
-              "line": 189,
+              "line": 241,
               "col": 27,
               "endCol": 39,
               "raw": "\"continuous\""
@@ -396,10 +396,10 @@
         }
       ]
     },
-    "ResultsScreen@app/results.tsx:192": {
+    "ResultsScreen@app/results.tsx:244": {
       "element": {
         "file": "app/results.tsx",
-        "line": 192
+        "line": 244
       },
       "styles": [
         {
@@ -407,10 +407,252 @@
           "file": "app/results.tsx",
           "properties": {
             "fontSize": {
-              "line": 195,
+              "line": 247,
               "col": 26,
               "endCol": 28,
               "raw": "13"
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:260": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 260
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "flex": {
+              "line": 262,
+              "col": 18,
+              "endCol": 19,
+              "raw": "1"
+            },
+            "alignItems": {
+              "line": 263,
+              "col": 24,
+              "endCol": 32,
+              "raw": "\"center\""
+            },
+            "justifyContent": {
+              "line": 264,
+              "col": 28,
+              "endCol": 36,
+              "raw": "\"center\""
+            },
+            "gap": {
+              "line": 265,
+              "col": 17,
+              "endCol": 19,
+              "raw": "16"
+            },
+            "padding": {
+              "line": 266,
+              "col": 21,
+              "endCol": 23,
+              "raw": "40"
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:270": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 270
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 273,
+              "col": 24,
+              "endCol": 26,
+              "raw": "15"
+            },
+            "textAlign": {
+              "line": 275,
+              "col": 25,
+              "endCol": 33,
+              "raw": "\"center\""
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:280": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 280
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 283,
+              "col": 24,
+              "endCol": 26,
+              "raw": "13"
+            },
+            "textAlign": {
+              "line": 285,
+              "col": 25,
+              "endCol": 33,
+              "raw": "\"center\""
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:296": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 296
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "marginHorizontal": {
+              "line": 299,
+              "col": 30,
+              "endCol": 32,
+              "raw": "16"
+            },
+            "marginTop": {
+              "line": 300,
+              "col": 23,
+              "endCol": 25,
+              "raw": "12"
+            },
+            "backgroundColor": {
+              "line": 301,
+              "col": 29,
+              "endCol": 38,
+              "raw": "\"#FEF3C7\""
+            },
+            "borderRadius": {
+              "line": 302,
+              "col": 26,
+              "endCol": 28,
+              "raw": "12"
+            },
+            "padding": {
+              "line": 303,
+              "col": 21,
+              "endCol": 23,
+              "raw": "14"
+            },
+            "flexDirection": {
+              "line": 304,
+              "col": 27,
+              "endCol": 32,
+              "raw": "\"row\""
+            },
+            "alignItems": {
+              "line": 305,
+              "col": 24,
+              "endCol": 32,
+              "raw": "\"center\""
+            },
+            "gap": {
+              "line": 306,
+              "col": 17,
+              "endCol": 19,
+              "raw": "10"
+            },
+            "borderCurve": {
+              "line": 307,
+              "col": 25,
+              "endCol": 37,
+              "raw": "\"continuous\""
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:311": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 311
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "flex": {
+              "line": 311,
+              "col": 31,
+              "endCol": 32,
+              "raw": "1"
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:312": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 312
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 316,
+              "col": 26,
+              "endCol": 28,
+              "raw": "13"
+            },
+            "color": {
+              "line": 317,
+              "col": 23,
+              "endCol": 32,
+              "raw": "\"#92400E\""
+            }
+          }
+        }
+      ]
+    },
+    "ResultsScreen@app/results.tsx:322": {
+      "element": {
+        "file": "app/results.tsx",
+        "line": 322
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "app/results.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 325,
+              "col": 26,
+              "endCol": 28,
+              "raw": "11"
+            },
+            "color": {
+              "line": 326,
+              "col": 23,
+              "endCol": 32,
+              "raw": "\"#B45309\""
+            },
+            "marginTop": {
+              "line": 327,
+              "col": 27,
+              "endCol": 28,
+              "raw": "2"
             }
           }
         }
@@ -1478,6 +1720,338 @@
         }
       ]
     },
+    "AdCard@components/ad-card.tsx:14": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 14
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "borderRadius": {
+              "line": 18,
+              "col": 22,
+              "endCol": 24,
+              "raw": "16"
+            },
+            "padding": {
+              "line": 19,
+              "col": 17,
+              "endCol": 19,
+              "raw": "16"
+            },
+            "boxShadow": {
+              "line": 20,
+              "col": 19,
+              "endCol": 48,
+              "raw": "\"0 4px 20px rgba(0,0,0,0.08)\""
+            },
+            "borderCurve": {
+              "line": 21,
+              "col": 21,
+              "endCol": 33,
+              "raw": "\"continuous\""
+            },
+            "borderWidth": {
+              "line": 22,
+              "col": 21,
+              "endCol": 22,
+              "raw": "1"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:27": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 27
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "position": {
+              "line": 29,
+              "col": 20,
+              "endCol": 30,
+              "raw": "\"absolute\""
+            },
+            "top": {
+              "line": 30,
+              "col": 15,
+              "endCol": 17,
+              "raw": "10"
+            },
+            "right": {
+              "line": 31,
+              "col": 17,
+              "endCol": 19,
+              "raw": "10"
+            },
+            "paddingHorizontal": {
+              "line": 33,
+              "col": 29,
+              "endCol": 30,
+              "raw": "8"
+            },
+            "paddingVertical": {
+              "line": 34,
+              "col": 27,
+              "endCol": 28,
+              "raw": "3"
+            },
+            "borderRadius": {
+              "line": 35,
+              "col": 24,
+              "endCol": 25,
+              "raw": "4"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:38": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 38
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 41,
+              "col": 22,
+              "endCol": 24,
+              "raw": "10"
+            },
+            "letterSpacing": {
+              "line": 43,
+              "col": 27,
+              "endCol": 30,
+              "raw": "0.3"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:50": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 50
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "flexDirection": {
+              "line": 50,
+              "col": 36,
+              "endCol": 41,
+              "raw": "\"row\""
+            },
+            "alignItems": {
+              "line": 50,
+              "col": 55,
+              "endCol": 63,
+              "raw": "\"center\""
+            },
+            "gap": {
+              "line": 50,
+              "col": 70,
+              "endCol": 72,
+              "raw": "14"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:52": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 52
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "width": {
+              "line": 54,
+              "col": 19,
+              "endCol": 21,
+              "raw": "64"
+            },
+            "height": {
+              "line": 55,
+              "col": 20,
+              "endCol": 22,
+              "raw": "64"
+            },
+            "borderRadius": {
+              "line": 56,
+              "col": 26,
+              "endCol": 28,
+              "raw": "12"
+            },
+            "alignItems": {
+              "line": 58,
+              "col": 24,
+              "endCol": 32,
+              "raw": "\"center\""
+            },
+            "justifyContent": {
+              "line": 59,
+              "col": 28,
+              "endCol": 36,
+              "raw": "\"center\""
+            },
+            "borderCurve": {
+              "line": 60,
+              "col": 25,
+              "endCol": 37,
+              "raw": "\"continuous\""
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:63": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 63
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "width": {
+              "line": 67,
+              "col": 28,
+              "endCol": 30,
+              "raw": "40"
+            },
+            "height": {
+              "line": 67,
+              "col": 40,
+              "endCol": 42,
+              "raw": "40"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:73": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 73
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "flex": {
+              "line": 73,
+              "col": 29,
+              "endCol": 30,
+              "raw": "1"
+            },
+            "gap": {
+              "line": 73,
+              "col": 37,
+              "endCol": 38,
+              "raw": "4"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:74": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 74
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 77,
+              "col": 24,
+              "endCol": 26,
+              "raw": "14"
+            },
+            "lineHeight": {
+              "line": 79,
+              "col": 26,
+              "endCol": 28,
+              "raw": "20"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:84": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 84
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 87,
+              "col": 24,
+              "endCol": 26,
+              "raw": "12"
+            }
+          }
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:96": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 96
+      },
+      "styles": [
+        {
+          "origin": "dynamic",
+          "resolvable": false
+        }
+      ]
+    },
+    "AdCard@components/ad-card.tsx:108": {
+      "element": {
+        "file": "components/ad-card.tsx",
+        "line": 108
+      },
+      "styles": [
+        {
+          "origin": "inline",
+          "file": "components/ad-card.tsx",
+          "properties": {
+            "fontSize": {
+              "line": 111,
+              "col": 24,
+              "endCol": 26,
+              "raw": "11"
+            }
+          }
+        }
+      ]
+    },
     "FlightCard@components/flight-card.tsx:36": {
       "element": {
         "file": "components/flight-card.tsx",
@@ -2076,10 +2650,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:183": {
+    "FlightCard@components/flight-card.tsx:184": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 183
+        "line": 184
       },
       "styles": [
         {
@@ -2088,10 +2662,10 @@
         }
       ]
     },
-    "FlightCard@components/flight-card.tsx:194": {
+    "FlightCard@components/flight-card.tsx:195": {
       "element": {
         "file": "components/flight-card.tsx",
-        "line": 194
+        "line": 195
       },
       "styles": [
         {
@@ -2099,348 +2673,16 @@
           "file": "components/flight-card.tsx",
           "properties": {
             "fontSize": {
-              "line": 197,
+              "line": 198,
               "col": 26,
               "endCol": 28,
               "raw": "12"
             },
             "color": {
-              "line": 198,
+              "line": 199,
               "col": 23,
               "endCol": 32,
               "raw": "\"#FFFFFF\""
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:14": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 14
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "borderRadius": {
-              "line": 18,
-              "col": 22,
-              "endCol": 24,
-              "raw": "16"
-            },
-            "padding": {
-              "line": 19,
-              "col": 17,
-              "endCol": 19,
-              "raw": "16"
-            },
-            "boxShadow": {
-              "line": 20,
-              "col": 19,
-              "endCol": 48,
-              "raw": "\"0 4px 20px rgba(0,0,0,0.08)\""
-            },
-            "borderCurve": {
-              "line": 21,
-              "col": 21,
-              "endCol": 33,
-              "raw": "\"continuous\""
-            },
-            "borderWidth": {
-              "line": 22,
-              "col": 21,
-              "endCol": 22,
-              "raw": "1"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:27": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 27
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "position": {
-              "line": 29,
-              "col": 20,
-              "endCol": 30,
-              "raw": "\"absolute\""
-            },
-            "top": {
-              "line": 30,
-              "col": 15,
-              "endCol": 17,
-              "raw": "10"
-            },
-            "right": {
-              "line": 31,
-              "col": 17,
-              "endCol": 19,
-              "raw": "10"
-            },
-            "paddingHorizontal": {
-              "line": 33,
-              "col": 29,
-              "endCol": 30,
-              "raw": "8"
-            },
-            "paddingVertical": {
-              "line": 34,
-              "col": 27,
-              "endCol": 28,
-              "raw": "3"
-            },
-            "borderRadius": {
-              "line": 35,
-              "col": 24,
-              "endCol": 25,
-              "raw": "4"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:38": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 38
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 41,
-              "col": 22,
-              "endCol": 24,
-              "raw": "10"
-            },
-            "letterSpacing": {
-              "line": 43,
-              "col": 27,
-              "endCol": 30,
-              "raw": "0.3"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:50": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 50
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "flexDirection": {
-              "line": 50,
-              "col": 36,
-              "endCol": 41,
-              "raw": "\"row\""
-            },
-            "alignItems": {
-              "line": 50,
-              "col": 55,
-              "endCol": 63,
-              "raw": "\"center\""
-            },
-            "gap": {
-              "line": 50,
-              "col": 70,
-              "endCol": 72,
-              "raw": "14"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:52": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 52
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "width": {
-              "line": 54,
-              "col": 19,
-              "endCol": 21,
-              "raw": "64"
-            },
-            "height": {
-              "line": 55,
-              "col": 20,
-              "endCol": 22,
-              "raw": "64"
-            },
-            "borderRadius": {
-              "line": 56,
-              "col": 26,
-              "endCol": 28,
-              "raw": "12"
-            },
-            "alignItems": {
-              "line": 58,
-              "col": 24,
-              "endCol": 32,
-              "raw": "\"center\""
-            },
-            "justifyContent": {
-              "line": 59,
-              "col": 28,
-              "endCol": 36,
-              "raw": "\"center\""
-            },
-            "borderCurve": {
-              "line": 60,
-              "col": 25,
-              "endCol": 37,
-              "raw": "\"continuous\""
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:63": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 63
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "width": {
-              "line": 67,
-              "col": 28,
-              "endCol": 30,
-              "raw": "40"
-            },
-            "height": {
-              "line": 67,
-              "col": 40,
-              "endCol": 42,
-              "raw": "40"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:73": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 73
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "flex": {
-              "line": 73,
-              "col": 29,
-              "endCol": 30,
-              "raw": "1"
-            },
-            "gap": {
-              "line": 73,
-              "col": 37,
-              "endCol": 38,
-              "raw": "4"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:74": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 74
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 77,
-              "col": 24,
-              "endCol": 26,
-              "raw": "14"
-            },
-            "lineHeight": {
-              "line": 79,
-              "col": 26,
-              "endCol": 28,
-              "raw": "20"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:84": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 84
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 87,
-              "col": 24,
-              "endCol": 26,
-              "raw": "12"
-            }
-          }
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:96": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 96
-      },
-      "styles": [
-        {
-          "origin": "dynamic",
-          "resolvable": false
-        }
-      ]
-    },
-    "AdCard@components/ad-card.tsx:108": {
-      "element": {
-        "file": "components/ad-card.tsx",
-        "line": 108
-      },
-      "styles": [
-        {
-          "origin": "inline",
-          "file": "components/ad-card.tsx",
-          "properties": {
-            "fontSize": {
-              "line": 111,
-              "col": 24,
-              "endCol": 26,
-              "raw": "11"
             }
           }
         }

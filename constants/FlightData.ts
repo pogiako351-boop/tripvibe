@@ -4,6 +4,7 @@ export interface Flight {
   airline_code?: string;
   airline_logo: string;
   price: number;
+  currency?: string; // "USD" for live API results, "PHP" for mock data
   duration: string;
   duration_minutes: number;
   departure_time: string;
